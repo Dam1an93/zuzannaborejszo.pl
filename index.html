@@ -430,6 +430,30 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
 .tr-intro{max-width:40rem;margin:0 auto 1.6rem;text-align:center}
 .tr-intro p{font-family:var(--f-body);font-style:normal;margin:0 0 .8rem;color:var(--muted);font-weight:300;font-size:1.05rem;line-height:1.75}
 
+.trh{width:100vw;margin-left:calc(50% - 50vw);margin-top:-3rem;margin-bottom:3.5rem;background:var(--surface);border-bottom:1px solid var(--line)}
+.trh-in{max-width:var(--w);margin:0 auto;padding:clamp(1.5rem,3vw,2.5rem) clamp(16px,4vw,48px) clamp(2.5rem,5vw,4rem);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+.trh .crumbs{text-align:left;margin-bottom:2rem}
+.trh-tag{display:inline-block;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-soft);padding:.5rem .9rem;border-radius:999px}
+.trh h2{font-size:clamp(2.6rem,5.4vw,4.6rem);line-height:.98;font-weight:400;margin:1.2rem 0 1.4rem}
+.trh h2 em{display:block}
+.trh-hi{font-family:var(--f-head);font-style:italic;font-size:clamp(1.3rem,2vw,1.6rem);line-height:1.35;color:var(--ink);margin:0 0 1rem}
+.trh-tx>p:not(.trh-hi){color:var(--muted);font-weight:300;font-size:1.02rem;line-height:1.75;margin:0 0 .8rem;max-width:36rem}
+.trh .acts{margin-top:1.8rem}
+.trh-ph{position:relative;margin:0}
+.trh-ph>img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:220px 220px 0 0}
+.trh-badge{position:absolute;top:1.6rem;left:-1.4rem;background:var(--ink);color:var(--paper);width:7.2rem;height:7.2rem;border-radius:50%;display:grid;place-content:center;text-align:center;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 14px 30px -14px rgba(0,0,0,.5)}
+.trh-badge b{display:block;font-family:var(--f-head);font-style:italic;font-weight:400;font-size:2rem;letter-spacing:0;text-transform:none;line-height:1;margin-bottom:.2rem}
+.trh-who{position:absolute;right:-1rem;bottom:1.6rem;display:flex;gap:.8rem;align-items:center;background:var(--paper);border:1px solid var(--line);padding:.8rem 1.1rem .8rem .8rem;box-shadow:0 18px 40px -22px rgba(42,31,25,.5);font-size:.82rem;color:var(--muted);font-weight:300;line-height:1.35}
+.trh-who img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.trh-who small{display:block;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.trh-who b{display:block;font-family:var(--f-head);font-weight:500;font-size:1.15rem;color:var(--ink)}
+.trh-facts{list-style:none;margin:0 auto;padding:0 clamp(16px,4vw,48px);max-width:var(--w);display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.trh-facts li{padding:1.5rem 1.2rem;border-left:1px solid var(--line);border-top:1px solid var(--line)}
+.trh-facts li:first-child{border-left:0;padding-left:0}
+.trh-facts b{display:block;font-family:var(--f-head);font-weight:500;font-size:1.35rem;color:var(--ink);margin-bottom:.25rem}
+.trh-facts span{font-size:.86rem;color:var(--muted);font-weight:300;line-height:1.5}
+@media (max-width:860px){.trh-in{grid-template-columns:1fr}.trh-ph{order:-1;max-width:420px;margin:0 auto}.trh-badge{left:0;width:6rem;height:6rem}.trh-who{right:0}.trh-facts{grid-template-columns:1fr 1fr}.trh-facts li:nth-child(3){border-left:0;padding-left:0}.trh-facts li{padding:1.1rem .8rem}}
+
 
 .sitepage{max-width:none;padding:0}
 .pagehead{padding-top:2.2rem}
@@ -1750,19 +1774,30 @@ html.js #index>section:not(.in)>*{opacity:0;transform:translateY(28px)}
 </script>
 </article>
 <article id="szkolenia" class="post page" hidden>
-  <div class="crumbs"><a href="#start">Strona główna</a> / Szkolenia</div>
-  <header class="art-head">
-    <span class="lbl">Szkolenie od podstaw · brwi + rzęsy</span>
-    <h2>Laminacja brwi <em>i rzęs</em></h2>
-    <p class="dek">Super, że zainteresowałaś się moim szkoleniem ze stylizacji rzęs i brwi.</p>
-    <div class="tr-intro"><p>Zabieg laminacji to jedna z najbardziej pożądanych usług w branży beauty i bardzo się cieszę, że chcesz zdobywać wiedzę właśnie u mnie.</p><p>Szkolenie u mnie to coś więcej niż podstawy. Przekazuję ogrom teoretycznej i praktycznej wiedzy, którą zdobywałam latami, pracując z setkami klientek.</p></div>
-    <div class="acts" style="justify-content:center;margin-top:.5rem"><a class="b2 solid" href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Zapisz się na szkolenie</a><a class="b2" href="#tr-program">Zobacz program</a></div>
-  </header>
-
-  <div class="tr-pics">
-    <figure><img src="img/laminacja-po-zabiegu.webp" alt="Brwi po laminacji" width="800" height="532" loading="lazy"><figcaption>Laminacja brwi</figcaption></figure>
-    <figure><img src="img/lifting-rzes.webp" alt="Rzęsy po liftingu" width="800" height="532" loading="lazy"><figcaption>Lifting i laminacja rzęs</figcaption></figure>
-  </div>
+  <section class="trh">
+    <div class="trh-in">
+      <div class="trh-tx">
+        <div class="crumbs"><a href="#start">Strona główna</a> / Szkolenia</div>
+        <span class="trh-tag">Szkolenie od podstaw · brwi + rzęsy</span>
+        <h2>Szkolenie z laminacji <em>brwi i&nbsp;rzęs</em></h2>
+        <p class="trh-hi">Super, że zainteresowałaś się moim szkoleniem ze stylizacji rzęs i brwi.</p>
+        <p>Zabieg laminacji to jedna z najbardziej pożądanych usług w branży beauty i bardzo się cieszę, że chcesz zdobywać wiedzę właśnie u mnie.</p>
+        <p>Szkolenie u mnie to coś więcej niż podstawy. Przekazuję ogrom teoretycznej i praktycznej wiedzy, którą zdobywałam latami, pracując z setkami klientek.</p>
+        <div class="acts"><a class="b2 solid" href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Zapisz się na szkolenie</a><a class="b2" href="#tr-program">Zobacz program</a></div>
+      </div>
+      <figure class="trh-ph">
+        <img src="img/laminacja-rzes.webp" alt="Laminacja rzęs podczas szkolenia" width="800" height="1000">
+        <span class="trh-badge"><b>2 w 1</b>brwi + rzęsy</span>
+        <figcaption class="trh-who"><img src="img/zuzanna-avatar.webp" alt="" width="56" height="56"><span><small>Prowadząca</small><b>Zuzanna Borejszo</b>linergistka i stylistka brwi i rzęs</span></figcaption>
+      </figure>
+    </div>
+    <ul class="trh-facts">
+      <li><b>Od zera</b><span>bez doświadczenia i szkoły kosmetycznej</span></li>
+      <li><b>Teoria + praktyka</b><span>wiedza, pokaz i praca krok po kroku</span></li>
+      <li><b>Brwi i rzęsy</b><span>dwa najpopularniejsze zabiegi na jednym szkoleniu</span></li>
+      <li><b>Wsparcie po kursie</b><span>piszesz do mnie przy pierwszych klientkach</span></li>
+    </ul>
+  </section>
 
   <div class="tr-why">
     <h3 class="tr-h">Dlaczego to najlepszy start w beauty?</h3>
