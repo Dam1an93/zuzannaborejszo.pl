@@ -332,7 +332,9 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
 .tr-who{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
 @media (max-width:760px){.tr-stats{grid-template-columns:1fr 1fr}.tr-stats li:nth-child(3){border-left:0}.tr-stats li:nth-child(n+3){border-top:1px solid var(--line)}.tr-tgrid,.tr-pics{grid-template-columns:1fr}}
 .eb-more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
-.eb-card{display:grid;gap:.55rem;align-content:start}
+.eb-card{display:grid;gap:.55rem;align-content:start;text-decoration:none}
+.eb-card:hover b{color:var(--accent)}
+.eb-btn{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:var(--accent);margin-top:.3rem}
 .eb-card img{width:100%;aspect-ratio:600/852;object-fit:cover;box-shadow:0 18px 40px -22px rgba(42,31,25,.5);margin-bottom:.5rem}
 .eb-card b{font-family:var(--f-head);font-weight:500;font-size:1.35rem;line-height:1.15}
 .eb-card p{margin:0;color:var(--muted);font-size:.9rem;font-weight:300;line-height:1.55}
@@ -1384,7 +1386,7 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
   <div class="ebook">
     <figure class="ebook-cover"><img src="img/ebook-brwi-do-twojej-twarzy.webp" alt="Okładka e-booka Brwi do Twojej twarzy" width="600" height="852" loading="lazy"></figure>
     <div class="ebook-tx">
-      <span class="lbl">Przewodnik · krok po kroku · 18 stron · PDF</span>
+      <span class="lbl">Przewodnik · krok po kroku · 18 stron · PDF · za darmo</span>
       <h3>Brwi do Twojej twarzy</h3>
       <p class="ebook-lead">Jak dobrać idealny kształt brwi do typu twarzy. Bez zgadywania i bez kopiowania trendów. Zasady, których używam przy każdej klientce, podane tak, żebyś mogła sprawdzić je sama, w 10 minut.</p>
       <ol class="chapters">
@@ -1396,14 +1398,14 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
         <li><b>Plan: zapuszczam brwi</b><span>Co robić tydzień po tygodniu, gdy chcesz zmienić kształt.</span></li>
         <li><b>Efekt na dłużej: co wybrać?</b><span>Porównanie laminacji, henny i makijażu permanentnego.</span></li>
       </ol>
-      <div class="acts"><a class="b2 solid" href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Napisz po e-booka</a><a class="b2" href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Instagram @zuzanna.borejszo</a></div>
-      <p class="fine-note">Napisz „e-book” w wiadomości na Instagramie, a odeślę Ci szczegóły.</p>
+      <div class="acts"><a class="b2 solid" href="ebooki/brwi-do-twojej-twarzy.pdf" target="_blank" rel="noopener">Czytaj e-booka</a><a class="b2" href="ebooki/brwi-do-twojej-twarzy.pdf" download>Pobierz PDF</a></div>
+      <p class="fine-note">Za darmo. Otworzy się w nowej karcie, możesz go też zapisać na telefonie.</p>
     </div>
   </div>
 
   <h3 class="tr-h">Więcej poradników</h3>
-  <div class="eb-more"><div class="eb-card"><img src="img/ebook-gojenie-brwi.webp" alt="Okładka e-booka Gojenie brwi dzień po dniu" width="600" height="852" loading="lazy"><span class="lbl">Po zabiegu · 10 stron · PDF</span><b>Gojenie brwi dzień po dniu</b><p>Kalendarz gojenia, pielęgnacja w pierwszym tygodniu, efekt ducha, słońce i SPF. Czego się spodziewać i kiedy się odezwać.</p></div><div class="eb-card"><img src="img/ebook-pierwszy-pmu.webp" alt="Okładka e-booka Pierwszy makijaż permanentny" width="600" height="852" loading="lazy"><span class="lbl">Przed zabiegiem · 10 stron · PDF</span><b>Pierwszy makijaż permanentny</b><p>Jak wybrać linergistkę, przeciwwskazania, kalendarz przygotowań, przebieg wizyty i gotowa lista pytań na konsultację.</p></div><div class="eb-card"><img src="img/ebook-lifting-rzes.webp" alt="Okładka e-booka Lifting i laminacja rzęs" width="600" height="852" loading="lazy"><span class="lbl">Rzęsy · 10 stron · PDF</span><b>Lifting i laminacja rzęs</b><p>Czym różni się lifting od koreańskiej laminacji, jak wygląda zabieg, pielęgnacja i odbudowa rzęs po przedłużaniu.</p></div></div>
-  <div class="soon"><span class="lbl">Jak dostać poradnik</span><p>Napisz na Instagramie „e-book” i tytuł poradnika, który Cię interesuje, a odeślę Ci szczegóły.</p><a class="b2 solid" href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener" style="margin-top:.75rem">Napisz po e-booka</a></div>
+  <div class="eb-more"><a class="eb-card" href="ebooki/gojenie-brwi-dzien-po-dniu.pdf" target="_blank" rel="noopener"><img src="img/ebook-gojenie-brwi.webp" alt="Okładka e-booka Gojenie brwi dzień po dniu" width="600" height="852" loading="lazy"><span class="lbl">Po zabiegu · 10 stron · PDF</span><b>Gojenie brwi dzień po dniu</b><p>Kalendarz gojenia, pielęgnacja w pierwszym tygodniu, efekt ducha, słońce i SPF. Czego się spodziewać i kiedy się odezwać.</p><span class="eb-btn">Czytaj e-booka →</span></a><a class="eb-card" href="ebooki/pierwszy-makijaz-permanentny.pdf" target="_blank" rel="noopener"><img src="img/ebook-pierwszy-pmu.webp" alt="Okładka e-booka Pierwszy makijaż permanentny" width="600" height="852" loading="lazy"><span class="lbl">Przed zabiegiem · 10 stron · PDF</span><b>Pierwszy makijaż permanentny</b><p>Jak wybrać linergistkę, przeciwwskazania, kalendarz przygotowań, przebieg wizyty i gotowa lista pytań na konsultację.</p><span class="eb-btn">Czytaj e-booka →</span></a><a class="eb-card" href="ebooki/lifting-i-laminacja-rzes.pdf" target="_blank" rel="noopener"><img src="img/ebook-lifting-rzes.webp" alt="Okładka e-booka Lifting i laminacja rzęs" width="600" height="852" loading="lazy"><span class="lbl">Rzęsy · 10 stron · PDF</span><b>Lifting i laminacja rzęs</b><p>Czym różni się lifting od koreańskiej laminacji, jak wygląda zabieg, pielęgnacja i odbudowa rzęs po przedłużaniu.</p><span class="eb-btn">Czytaj e-booka →</span></a></div>
+  <div class="soon"><span class="lbl">Za darmo</span><p>Wszystkie poradniki możesz czytać online albo pobrać na telefon. Masz pytanie po lekturze? Napisz do mnie na Instagramie.</p><a class="b2 solid" href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener" style="margin-top:.75rem">Instagram @zuzanna.borejszo</a></div>
 </article>
 <article id="szkolenia" class="post page" hidden>
   <div class="crumbs"><a href="#start">Strona główna</a> / Szkolenia</div>
