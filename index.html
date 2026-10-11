@@ -430,62 +430,6 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
 .tr-intro{max-width:40rem;margin:0 auto 1.6rem;text-align:center}
 .tr-intro p{font-family:var(--f-body);font-style:normal;margin:0 0 .8rem;color:var(--muted);font-weight:300;font-size:1.05rem;line-height:1.75}
 
-.trh{width:100vw;margin-left:calc(50% - 50vw);margin-top:-3rem;margin-bottom:3.5rem;background:var(--surface);border-bottom:1px solid var(--line)}
-.trh-in{max-width:var(--w);margin:0 auto;padding:clamp(1.5rem,3vw,2.5rem) clamp(16px,4vw,48px) clamp(2.5rem,5vw,4rem);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(2rem,5vw,5rem);align-items:center}
-.trh .crumbs{text-align:left;margin-bottom:2rem}
-.trh-tag{display:inline-block;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-soft);padding:.5rem .9rem;border-radius:999px}
-.trh h2{font-size:clamp(2.6rem,5.4vw,4.6rem);line-height:.98;font-weight:400;margin:1.2rem 0 1.4rem}
-.trh h2 em{display:block}
-.trh-hi{font-family:var(--f-head);font-style:italic;font-size:clamp(1.3rem,2vw,1.6rem);line-height:1.35;color:var(--ink);margin:0 0 1rem}
-.trh-tx>p:not(.trh-hi){color:var(--muted);font-weight:300;font-size:1.02rem;line-height:1.75;margin:0 0 .8rem;max-width:36rem}
-.trh .acts{margin-top:1.8rem}
-.trh-ph{position:relative;margin:0}
-.trh-ph>img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:220px 220px 0 0}
-.trh-badge{position:absolute;top:1.6rem;left:-1.4rem;background:var(--ink);color:var(--paper);width:7.2rem;height:7.2rem;border-radius:50%;display:grid;place-content:center;text-align:center;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 14px 30px -14px rgba(0,0,0,.5)}
-.trh-badge b{display:block;font-family:var(--f-head);font-style:italic;font-weight:400;font-size:2rem;letter-spacing:0;text-transform:none;line-height:1;margin-bottom:.2rem}
-.trh-who{position:absolute;right:-1rem;bottom:1.6rem;display:flex;gap:.8rem;align-items:center;background:var(--paper);border:1px solid var(--line);padding:.8rem 1.1rem .8rem .8rem;box-shadow:0 18px 40px -22px rgba(42,31,25,.5);font-size:.82rem;color:var(--muted);font-weight:300;line-height:1.35}
-.trh-who img{width:52px;height:52px;border-radius:50%;object-fit:cover}
-.trh-who small{display:block;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
-.trh-who b{display:block;font-family:var(--f-head);font-weight:500;font-size:1.15rem;color:var(--ink)}
-.trh-facts{list-style:none;margin:0 auto;padding:0 clamp(16px,4vw,48px);max-width:var(--w);display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
-.trh-facts li{padding:1.5rem 1.2rem;border-left:1px solid var(--line);border-top:1px solid var(--line)}
-.trh-facts li:first-child{border-left:0;padding-left:0}
-.trh-facts b{display:block;font-family:var(--f-head);font-weight:500;font-size:1.35rem;color:var(--ink);margin-bottom:.25rem}
-.trh-facts span{font-size:.86rem;color:var(--muted);font-weight:300;line-height:1.5}
-@media (max-width:860px){.trh-in{grid-template-columns:1fr}.trh-ph{order:-1;max-width:420px;margin:0 auto}.trh-badge{left:0;width:6rem;height:6rem}.trh-who{right:0}.trh-facts{grid-template-columns:1fr 1fr}.trh-facts li:nth-child(3){border-left:0;padding-left:0}.trh-facts li{padding:1.1rem .8rem}}
-
-.trx{width:100vw;margin-left:calc(50% - 50vw);margin-top:-3rem;margin-bottom:3.5rem;background:radial-gradient(120% 90% at 85% 40%,#7a4e2c 0%,#3a2619 45%,#211611 100%);color:#f6ece0;overflow:hidden;position:relative}
-.trx::after{content:"";position:absolute;inset:auto 0 0 0;height:90px;background:linear-gradient(transparent,rgba(0,0,0,.18));pointer-events:none}
-.trx-in{max-width:var(--w);margin:0 auto;padding:clamp(1.6rem,3vw,2.4rem) clamp(16px,4vw,48px) 0;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(1.5rem,4vw,4rem);align-items:end;position:relative;z-index:1}
-.trx-tx{padding-bottom:clamp(2.5rem,6vw,5rem)}
-.trx .crumbs{text-align:left;margin-bottom:1.8rem;color:rgba(246,236,224,.6)}
-.trx .crumbs a{color:rgba(246,236,224,.8)}
-.trx-pill{display:inline-flex;align-items:center;gap:.6rem;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:#f3d9ae;background:rgba(243,217,174,.1);border:1px solid rgba(243,217,174,.35);padding:.55rem 1rem;border-radius:999px}
-.trx-pill i{width:8px;height:8px;border-radius:50%;background:#7dd38f;box-shadow:0 0 0 4px rgba(125,211,143,.18);animation:trxp 1.8s infinite}
-@keyframes trxp{50%{box-shadow:0 0 0 8px rgba(125,211,143,0)}}
-.trx h2{font-size:clamp(2.8rem,5.6vw,5rem);line-height:.95;font-weight:500;letter-spacing:-.01em;margin:1.3rem 0 1.5rem;color:#fff8ef}
-.trx h2 em{display:block;color:#e9c48f;font-weight:400}
-.trx-hi{font-family:var(--f-head);font-style:italic;font-size:clamp(1.3rem,2vw,1.6rem);line-height:1.35;margin:0 0 1rem;color:#fff3e4}
-.trx-tx>p:not(.trx-hi){color:rgba(246,236,224,.78);font-weight:300;font-size:1.02rem;line-height:1.75;margin:0 0 .8rem;max-width:35rem}
-.trx-acts{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
-.trx-btn{display:inline-flex;align-items:center;justify-content:center;padding:1.1rem 2rem;border-radius:999px;background:linear-gradient(135deg,#e9c48f,#c8955a);color:#24170f;font-weight:600;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;box-shadow:0 14px 34px -12px rgba(233,196,143,.65);transition:transform .25s,box-shadow .25s}
-.trx-btn:hover{transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(233,196,143,.85)}
-.trx-btn.ghost{background:transparent;color:#f6ece0;border:1px solid rgba(246,236,224,.45);box-shadow:none}
-.trx-btn.ghost:hover{border-color:#f6ece0}
-.trx-ticks{list-style:none;padding:0;margin:2.2rem 0 0;display:grid;grid-template-columns:1fr 1fr;gap:.85rem 1.5rem;max-width:34rem}
-.trx-ticks li{display:flex;align-items:center;gap:.7rem;font-size:.92rem;color:#f6ece0}
-.trx-ticks li::before{content:"✓";flex:none;width:1.6rem;height:1.6rem;border-radius:50%;display:grid;place-items:center;font-size:.8rem;color:#24170f;background:#e9c48f}
-.trx-ph{position:relative;margin:0;align-self:end}
-.trx-glow{position:absolute;left:8%;right:8%;bottom:6%;top:12%;border-radius:50%;background:radial-gradient(closest-side,rgba(233,196,143,.45),transparent);filter:blur(10px)}
-.trx-ph>img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;display:block;border-radius:260px 260px 0 0;border:1px solid rgba(233,196,143,.4);border-bottom:0}
-.trx-badge{position:absolute;top:2rem;left:-1.2rem;width:7.4rem;height:7.4rem;border-radius:50%;background:#fff8ef;color:#24170f;display:grid;place-content:center;text-align:center;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 18px 40px -16px rgba(0,0,0,.6);transform:rotate(-8deg)}
-.trx-badge b{display:block;font-family:var(--f-head);font-style:italic;font-weight:500;font-size:2.1rem;letter-spacing:0;text-transform:none;line-height:1;color:#a8191a;margin-bottom:.15rem}
-.trx-card{position:absolute;right:-.8rem;bottom:2.2rem;background:rgba(255,248,239,.96);color:#24170f;padding:1rem 1.3rem;border-radius:18px;box-shadow:0 24px 50px -22px rgba(0,0,0,.65);display:grid;gap:.15rem;font-size:.8rem;font-weight:300;color:#6e5f52}
-.trx-card small{font-size:.56rem;letter-spacing:.22em;text-transform:uppercase;color:#9a7440;font-weight:500}
-.trx-card b{font-family:var(--f-head);font-weight:600;font-size:1.25rem;color:#24170f}
-.trx-card em{font-style:normal;color:#9a7440;font-weight:500;font-size:.74rem;margin-top:.25rem}
-@media (max-width:860px){.trx-in{grid-template-columns:1fr;align-items:start;padding-top:1.2rem}.trx-ph{order:-1;max-width:400px;width:100%;margin:0 auto}.trx-tx{padding-bottom:2.5rem}.trx-badge{left:0;width:6rem;height:6rem}.trx-card{right:0}.trx-ticks{grid-template-columns:1fr}.trx-btn{width:100%}}
-
 
 .sitepage{max-width:none;padding:0}
 .pagehead{padding-top:2.2rem}
@@ -1806,31 +1750,19 @@ html.js #index>section:not(.in)>*{opacity:0;transform:translateY(28px)}
 </script>
 </article>
 <article id="szkolenia" class="post page" hidden>
-  <section class="trx">
-    <div class="trx-in">
-      <div class="trx-tx">
-        <div class="crumbs"><a href="#start">Strona główna</a> / Szkolenia</div>
-        <span class="trx-pill"><i></i>Zapisy otwarte · szkolenie od podstaw</span>
-        <h2>Szkolenie z laminacji <em>brwi i&nbsp;rzęs</em></h2>
-        <p class="trx-hi">Super, że zainteresowałaś się moim szkoleniem ze stylizacji rzęs i brwi.</p>
-        <p>Zabieg laminacji to jedna z najbardziej pożądanych usług w branży beauty i bardzo się cieszę, że chcesz zdobywać wiedzę właśnie u mnie.</p>
-        <p>Szkolenie u mnie to coś więcej niż podstawy. Przekazuję ogrom teoretycznej i praktycznej wiedzy, którą zdobywałam latami, pracując z setkami klientek.</p>
-        <div class="trx-acts"><a class="trx-btn" href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Zapisz się na szkolenie</a><a class="trx-btn ghost" href="#tr-program">Zobacz program</a></div>
-        <ul class="trx-ticks">
-          <li>Od zera, bez doświadczenia</li>
-          <li>Brwi i rzęsy na jednym szkoleniu</li>
-          <li>Teoria, pokaz i praktyka</li>
-          <li>Wsparcie po szkoleniu</li>
-        </ul>
-      </div>
-      <figure class="trx-ph">
-        <div class="trx-glow"></div>
-        <img src="img/zuzanna-hero.webp" alt="Zuzanna Borejszo, prowadząca szkolenie" width="800" height="1000">
-        <span class="trx-badge"><b>2 w 1</b>brwi + rzęsy</span>
-        <figcaption class="trx-card"><small>Prowadząca</small><b>Zuzanna Borejszo</b><span>linergistka i stylistka brwi i rzęs</span><em>★★★★★ 5,0 · 474 opinie na Booksy</em></figcaption>
-      </figure>
-    </div>
-  </section>
+  <div class="crumbs"><a href="#start">Strona główna</a> / Szkolenia</div>
+  <header class="art-head">
+    <span class="lbl">Szkolenie od podstaw · brwi + rzęsy</span>
+    <h2>Laminacja brwi <em>i rzęs</em></h2>
+    <p class="dek">Super, że zainteresowałaś się moim szkoleniem ze stylizacji rzęs i brwi.</p>
+    <div class="tr-intro"><p>Zabieg laminacji to jedna z najbardziej pożądanych usług w branży beauty i bardzo się cieszę, że chcesz zdobywać wiedzę właśnie u mnie.</p><p>Szkolenie u mnie to coś więcej niż podstawy. Przekazuję ogrom teoretycznej i praktycznej wiedzy, którą zdobywałam latami, pracując z setkami klientek.</p></div>
+    <div class="acts" style="justify-content:center;margin-top:.5rem"><a class="b2 solid" href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Zapisz się na szkolenie</a><a class="b2" href="#tr-program">Zobacz program</a></div>
+  </header>
+
+  <div class="tr-pics">
+    <figure><img src="img/laminacja-po-zabiegu.webp" alt="Brwi po laminacji" width="800" height="532" loading="lazy"><figcaption>Laminacja brwi</figcaption></figure>
+    <figure><img src="img/lifting-rzes.webp" alt="Rzęsy po liftingu" width="800" height="532" loading="lazy"><figcaption>Lifting i laminacja rzęs</figcaption></figure>
+  </div>
 
   <div class="tr-why">
     <h3 class="tr-h">Dlaczego to najlepszy start w beauty?</h3>
