@@ -311,6 +311,26 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
 .tr-who>div{border-top:1px solid var(--gold);padding-top:1rem}
 .tr-who p{margin:.5rem 0 0;color:var(--muted);font-weight:300}
 .trend .pg{font-family:var(--f-body);font-style:normal;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:500}
+.tr-pics{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:0 0 1rem}
+.tr-pics figure{margin:0}
+.tr-pics img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.tr-pics figcaption{font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:.6rem;text-align:center}
+.tr-stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--line)}
+.tr-stats li{padding:1.4rem 1rem;text-align:center;border-left:1px solid var(--line)}
+.tr-stats li:first-child{border-left:0}
+.tr-stats b{display:block;font-family:var(--f-head);font-style:italic;font-weight:400;font-size:2.1rem;line-height:1;color:var(--gold)}
+.tr-stats span{display:block;margin-top:.7rem;font-size:.86rem;font-weight:300;color:var(--muted);line-height:1.5}
+.tr-trends{margin-top:3rem;background:var(--tint);padding:clamp(1.5rem,4vw,2.5rem);position:relative}
+.tr-trends::before{content:"";position:absolute;inset:10px;border:1px solid var(--gold-soft);pointer-events:none}
+.tr-trends>.lbl{display:block;text-align:center;margin-bottom:1.5rem}
+.tr-tgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 2rem;position:relative}
+.tr-tgrid b{font-family:var(--f-head);font-weight:500;font-size:1.35rem}
+.tr-tgrid p{margin:.4rem 0 0;font-size:.95rem;font-weight:300;color:var(--muted);line-height:1.6}
+.gain{list-style:none;margin:0;padding:0;display:grid;gap:.75rem}
+.gain li{position:relative;padding:1rem 1.25rem 1rem 3rem;background:var(--surface);border:1px solid var(--line)}
+.gain li::before{content:"✦";position:absolute;left:1.2rem;top:1rem;color:var(--gold)}
+.tr-who{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
+@media (max-width:760px){.tr-stats{grid-template-columns:1fr 1fr}.tr-stats li:nth-child(3){border-left:0}.tr-stats li:nth-child(n+3){border-top:1px solid var(--line)}.tr-tgrid,.tr-pics{grid-template-columns:1fr}}
 @media (max-width:760px){.ebook,.tr-grid,.tr-who{grid-template-columns:1fr}.ebook-cover{max-width:320px;margin-inline:auto}}
 </style>
 </head>
@@ -1383,30 +1403,76 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
 <article id="szkolenia" class="post page" hidden>
   <div class="crumbs"><a href="#start">Strona główna</a> / Szkolenia</div>
   <header class="art-head">
-    <span class="lbl">Szkolenia</span>
-    <h2>Perfekcyjne <em>Brwi</em></h2>
-    <p class="dek">Szkolenie ze stylizacji brwi dla osób, które chcą robić to dobrze: od budowy włosa, przez laminację i koloryzację, po geometrię.</p>
+    <span class="lbl">Szkolenie od podstaw · brwi + rzęsy</span>
+    <h2>Laminacja brwi <em>i rzęs</em></h2>
+    <p class="dek">Dla dziewczyn, które chcą zacząć w beauty. Bez doświadczenia: zaczynamy od zera, a kończymy na zabiegach, o które klientki pytają dziś najczęściej.</p>
+    <div class="acts" style="justify-content:center;margin-top:.5rem"><a class="b2 solid" href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Zapisz się na szkolenie</a><a class="b2" href="#tr-program">Zobacz program</a></div>
   </header>
 
-  <div class="tr-intro">
-    <p>Uczę tego, czego sama używam codziennie w salonie Piękne Spojrzenia. Mniej teorii dla teorii, więcej rzeczy, które od razu przydają się przy klientce: jak ocenić włos, jak dobrać produkt i czas, jak wyznaczyć kształt, który pasuje do twarzy.</p>
+  <div class="tr-pics">
+    <figure><img src="img/laminacja-po-zabiegu.webp" alt="Brwi po laminacji" width="800" height="532" loading="lazy"><figcaption>Laminacja brwi</figcaption></figure>
+    <figure><img src="img/lifting-rzes.webp" alt="Rzęsy po liftingu" width="800" height="532" loading="lazy"><figcaption>Lifting i laminacja rzęs</figcaption></figure>
   </div>
 
-  <h3 class="tr-h">Program</h3>
+  <div class="tr-why">
+    <h3 class="tr-h">Dlaczego to najlepszy start w beauty?</h3>
+    <ul class="tr-stats">
+      <li><b>2 w 1</b><span>Brwi i rzęsy na jednym szkoleniu. Klientka, która przychodzi na jedno, często od razu bierze drugie.</span></li>
+      <li><b>6–8 tyg.</b><span>Tyle trzyma efekt. Klientki wracają regularnie, a Ty budujesz stały grafik.</span></li>
+      <li><b>~1 godz.</b><span>Krótki zabieg bez igieł i znieczulenia. Łatwo zmieścić go w grafiku.</span></li>
+      <li><b>Mały start</b><span>Nie potrzebujesz drogiego sprzętu ani lokalu na start. Wystarczy zestaw preparatów i wiedza, jak ich używać.</span></li>
+    </ul>
+  </div>
+
+  <div class="tr-trends">
+    <span class="lbl">Od razu uczysz się tego, co modne w 2026</span>
+    <div class="tr-tgrid">
+      <div><b>Soft laminacja brwi</b><p>Koniec ze sztywnymi brwiami „na baczność”. Włoski układamy zgodnie z ich naturalnym kierunkiem wzrostu, pod lekkim kątem. Efekt jest puszysty, miękki i wygląda jak naturalnie gęste brwi.</p></div>
+      <div><b>Zdrowie włosa na pierwszym miejscu</b><p>Klientki pytają, czy laminacja nie zniszczy im brwi. Nauczysz się dobierać czas i łagodniejsze preparaty do kondycji włosa, a po zabiegu stosować pielęgnację odżywczą.</p></div>
+      <div><b>Naturalny lifting rzęs</b><p>Przedłużanie rzęs traci popularność, a rośnie moda na własne, ładnie podkręcone rzęsy. Pokażę, jak dobrać wałeczek i skręt, żeby efekt był otwarty, ale naturalny.</p></div>
+      <div><b>Koloryzacja „jak skóra”</b><p>Półprzezroczysty kolor, który zagęszcza optycznie, ale nie wygląda jak namalowany. Dobór odcienia do karnacji i włosów.</p></div>
+    </div>
+  </div>
+
+  <h3 class="tr-h" id="tr-program">Program: krok po kroku od zera</h3>
   <ol class="tr-grid">
-    <li><b>Budowa włosa i skóry</b><span>Jak wygląda włos brwi, co dzieje się z nim podczas zabiegu i jak ocenić jego kondycję przed pracą.</span></li>
-    <li><b>Laminacja brwi</b><span>Przebieg zabiegu krok po kroku, dobór czasu do rodzaju włosa i pielęgnacja po zabiegu.</span></li>
-    <li><b>Henna</b><span>Kiedy henna, a kiedy farbka. Koloryzacja skóry i włosa, dobór odcienia.</span></li>
-    <li><b>Farbki do brwi</b><span>Mieszanie kolorów, neutralizacja niechcianych tonów i trwałość efektu.</span></li>
-    <li><b>Geometria brwi</b><span>Wyznaczanie kształtu do twarzy metodą punktów. Brwi się projektuje, a nie kopiuje.</span></li>
+    <li><b>Budowa włosa i skóry</b><span>Jak działa laminacja „od środka”. Ocena kondycji włosa przed zabiegiem.</span></li>
+    <li><b>Bezpieczeństwo</b><span>Wywiad, przeciwwskazania, test uczuleniowy, higiena stanowiska.</span></li>
+    <li><b>Konsultacja i dobór efektu</b><span>Kształt twarzy, oprawa oka i oczekiwania klientki. Jak doradzić, a nie tylko wykonać.</span></li>
+    <li><b>Laminacja brwi: soft i klasyczna</b><span>Krok po kroku: preparaty, czasy, układanie włosków, kiedy jaka wersja.</span></li>
+    <li><b>Koloryzacja i geometria brwi</b><span>Henna i farbka, dobór odcienia, wyznaczanie kształtu metodą punktów.</span></li>
+    <li><b>Lifting i laminacja rzęs</b><span>Dobór wałeczków i skrętu, aplikacja, czasy, koloryzacja rzęs.</span></li>
+    <li><b>Odżywienie i pielęgnacja</b><span>Zabiegi odżywcze po laminacji i zalecenia, które przekazujesz klientce.</span></li>
+    <li><b>Błędy i jak je naprawić</b><span>Prześwietlone, puszące się lub zbyt mocno podkręcone włoski. Jak tego uniknąć i co robić, gdy się zdarzy.</span></li>
+    <li><b>Zdjęcia i pierwsze klientki</b><span>Jak fotografować efekty na Instagram i jak ustalić cennik na start.</span></li>
   </ol>
 
-  <div class="tr-who">
-    <div><span class="lbl">Dla kogo</span><p>Dla osób, które zaczynają pracę z brwiami albo chcą uporządkować wiedzę i pracować pewniej.</p></div>
-    <div><span class="lbl">Terminy i cena</span><p>Ustalane indywidualnie. Napisz do mnie, a odpowiem z wolnymi terminami i szczegółami.</p></div>
+  <div class="tr-gain">
+    <h3 class="tr-h">Co Ci daje to szkolenie</h3>
+    <ul class="gain">
+      <li>Pierwszy zawód w beauty: dwa najpopularniejsze zabiegi na oprawę oka, w wersji zgodnej z trendami.</li>
+      <li>Pewność przy pierwszej klientce: wiesz, jak dobrać czas, preparat i efekt do konkretnej osoby.</li>
+      <li>Wiedzę, jak dbać o zdrowie włosa, żeby klientki wracały zadowolone, a nie z przesuszonymi brwiami.</li>
+      <li>Gotowy sposób na zdjęcia i pierwsze klientki, żeby szybko zacząć zarabiać na nowej usłudze.</li>
+      <li>Kontakt ze mną po szkoleniu, gdy pojawią się pytania przy pierwszych zabiegach.</li>
+    </ul>
   </div>
 
-  <div class="cta"><span class="lbl">Zapisy</span><p><span>Chcesz się zapisać albo masz pytanie?</span> Napisz na Instagramie „szkolenie”, a wyślę Ci szczegóły.</p><div class="cta-btns"><a href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Zapytaj o szkolenie</a><a href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Zobacz moje prace</a></div></div>
+  <div class="tr-who">
+    <div><span class="lbl">Dla kogo</span><p>Dla dziewczyn, które chcą zacząć w beauty i nie wiedzą, od czego. Nie musisz mieć żadnego doświadczenia ani wykształcenia kosmetycznego. Wszystko tłumaczę od podstaw, prostym językiem.</p></div>
+    <div><span class="lbl">Prowadząca</span><p>Zuzanna Borejszo, linergistka i stylistka brwi i rzęs z salonu Piękne Spojrzenia na warszawskiej Pradze. Uczę tego, co sama robię codziennie przy klientkach.</p></div>
+  </div>
+
+  <h3 class="tr-h">Najczęstsze pytania</h3>
+  <div class="faq">
+    <details><summary>Nigdy nie robiłam brwi ani rzęs. Dam radę?</summary><p>Tak, to szkolenie jest właśnie dla Ciebie. Zaczynamy od zera: budowa włosa, bezpieczeństwo, a potem technika krok po kroku.</p></details>
+    <details><summary>Czy muszę mieć szkołę kosmetyczną?</summary><p>Nie. Na start wystarczy chęć i ręka do detali. Resztę pokażę Ci na szkoleniu.</p></details>
+    <details><summary>Czy laminacja niszczy brwi i rzęsy?</summary><p>Przy dobrze dobranym czasie, odpowiednim preparacie i pielęgnacji po zabiegu nie. Właśnie tego uczę najdokładniej.</p></details>
+    <details><summary>Ile utrzymuje się efekt u klientki?</summary><p>Zwykle 6–8 tygodni, zarówno na brwiach, jak i na rzęsach. Potem włoski naturalnie się wymieniają i zabieg można powtórzyć.</p></details>
+    <details><summary>Jaki jest termin i cena?</summary><p>Napisz do mnie na Instagramie, a podam najbliższe terminy, cenę i wszystkie szczegóły.</p></details>
+  </div>
+
+  <div class="cta"><span class="lbl">Zapisy</span><p><span>Chcesz zacząć w beauty?</span> Napisz „szkolenie” na Instagramie, a odpiszę z terminami i szczegółami.</p><div class="cta-btns"><a href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Zapisz się na szkolenie</a><a href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Zobacz moje prace</a></div></div>
 </article>
 </div>
 
