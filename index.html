@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Blog Zuzanny Borejszo, linergistki z Warszawy (Praga-Północ). Makijaż permanentny, stylizacja brwi, lifting rzęs i laserowe usuwanie PMU. E-booki i szkolenia.">
+<meta name="description" content="Zuzanna Borejszo, linergistka i stylistka brwi i rzęs w Warszawie. Makijaż permanentny brwi, laminacja brwi, lifting rzęs, szkolenia i e-booki. Salon Piękne Spojrzenia, Białostocka 24.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Zuzanna Borejszo · Brwi, rzęsy, makijaż permanentny">
-<meta property="og:description" content="Blog Zuzanny Borejszo, linergistki z Warszawy (Praga-Północ). Makijaż permanentny, stylizacja brwi, lifting rzęs i laserowe usuwanie PMU. E-booki i szkolenia.">
+<meta property="og:description" content="Zuzanna Borejszo, linergistka i stylistka brwi i rzęs w Warszawie. Makijaż permanentny brwi, laminacja brwi, lifting rzęs, szkolenia i e-booki. Salon Piękne Spojrzenia, Białostocka 24.">
 <meta property="og:image" content="https://zuzannaborejszo.pl/img/zuzanna-hero.webp">
 <meta property="og:url" content="https://zuzannaborejszo.pl/">
 <link rel="canonical" href="https://zuzannaborejszo.pl/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f3eadd'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%239a7440'%3EZ%3C/text%3E%3C/svg%3E">
-<title>Zuzanna Borejszo · Blog o brwiach, rzęsach i makijażu permanentnym</title>
+<title>Zuzanna Borejszo · Makijaż permanentny, brwi i rzęsy · Warszawa</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap">
@@ -63,8 +63,9 @@ img{display:block;max-width:100%;height:auto}
 .nav a:hover{color:var(--ink);border-bottom-color:var(--gold)}
 .bk{grid-column:3;justify-self:end;display:inline-flex;align-items:center;justify-content:center;gap:.4rem;background:var(--ink);color:var(--paper);font-family:var(--f-body);font-weight:500;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:.85rem 1.4rem;white-space:nowrap;transition:background .3s,color .3s}
 .bk:hover{background:var(--accent);color:var(--on-accent)}
-@media (max-width:1340px){.nav{display:none}.head .wrap{grid-template-columns:auto 1fr}.head .logo{grid-column:1;justify-items:start}.bk{grid-column:2}}
+@media (max-width:1340px){.nav{display:flex;grid-column:1/-1;grid-row:2;justify-content:center;overflow-x:auto;scrollbar-width:none;border-top:1px solid var(--line);padding-top:.75rem;margin-top:-.25rem;gap:1.8rem}.nav::-webkit-scrollbar{display:none}.head .wrap{grid-template-columns:auto 1fr}.head .logo{grid-column:1;justify-items:start}.bk{grid-column:2}}
 @media (max-width:1340px){.head .wrap{grid-template-columns:minmax(0,1fr) auto}}
+@media (max-width:820px){.nav{justify-content:flex-start;gap:1.3rem}}
 @media (max-width:520px){.head .logo b{font-size:1.15rem;letter-spacing:.08em}.head .logo small{display:none}.bk{padding:.75rem .9rem;letter-spacing:.12em;font-size:.62rem}.head .wrap{gap:.75rem}}
 .trend{background:var(--paper);color:var(--muted);border-bottom:1px solid var(--line);font-size:.86rem}
 .trend .wrap{display:flex;gap:2rem;align-items:center;justify-content:center;padding-block:.7rem;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
@@ -426,6 +427,65 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
 .zs summary{padding-right:.4rem}
 .zonepage{overflow-x:clip}
 
+.blogpage{max-width:none;padding:0}
+.blogpage .crumbs{margin-bottom:0}
+.me{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2.5rem,6vw,6rem);align-items:start}
+.me h2{font-size:clamp(2.4rem,4.8vw,3.8rem);font-weight:400;margin:.85rem 0 1.5rem}
+.me-txt p{color:var(--muted);font-weight:300;line-height:1.75;margin:0 0 1rem;font-size:1.05rem}
+.me-txt .acts{margin-top:2rem}
+.vals{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.vals div{padding:1.6rem 1.4rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+.vals i{display:block;font-family:var(--f-head);font-size:1.7rem;color:var(--gold);line-height:1}
+.vals b{display:block;font-family:var(--f-head);font-weight:500;font-size:1.45rem;margin:.7rem 0 .4rem}
+.vals p{margin:0;color:var(--muted);font-weight:300;font-size:.92rem;line-height:1.6}
+.svc-sec{background:var(--surface);border-block:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+.sv{display:grid;grid-template-columns:42% minmax(0,1fr);text-decoration:none;color:inherit;background:var(--paper);border:1px solid var(--line);transition:border-color .3s,box-shadow .3s}
+.sv:last-child:nth-child(odd){grid-column:1/-1;grid-template-columns:26% minmax(0,1fr)}
+.sv:hover{border-color:var(--gold);box-shadow:0 18px 40px -26px rgba(42,31,25,.45)}
+.sv-ph{overflow:hidden;min-height:100%}
+.sv-ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s}
+.sv:hover .sv-ph img{transform:scale(1.04)}
+.sv-tx{padding:1.7rem 1.6rem}
+.sv h3{font-size:1.75rem;font-weight:500;margin:.55rem 0 .6rem}
+.sv p{margin:0 0 1rem;color:var(--muted);font-weight:300;font-size:.95rem;line-height:1.6}
+.sv ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.sv li{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px dashed var(--line);font-size:.9rem;font-weight:300}
+.sv li b{font-weight:500;white-space:nowrap;color:var(--ink)}
+@media (max-width:900px){.me{grid-template-columns:1fr}.svc{grid-template-columns:1fr}.sv,.sv:last-child:nth-child(odd){grid-template-columns:38% minmax(0,1fr)}}
+@media (max-width:560px){.sv,.sv:last-child:nth-child(odd){grid-template-columns:1fr}.sv-ph{aspect-ratio:16/9}.vals{grid-template-columns:1fr}}
+.band{padding-block:clamp(4.5rem,9vw,7.5rem);position:relative}
+.band::before{content:"";position:absolute;inset:clamp(12px,2vw,24px);border:1px solid var(--hot);opacity:.45;pointer-events:none}
+.band-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(2rem,6vw,5.5rem);align-items:center}
+.band h2,.contact h2{font-size:clamp(2.4rem,4.8vw,3.8rem);font-weight:400;margin-top:.85rem}
+.band .lead,.contact .lead{color:var(--nmuted);font-size:1.1rem;font-weight:300;margin:1.4rem 0 0;max-width:44ch;line-height:1.65}
+.band-ph img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+@media (max-width:820px){.band-grid{grid-template-columns:1fr}.band-ph{order:-1}.band-ph img{aspect-ratio:16/10}}
+.ebs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.6rem}
+.eb{text-decoration:none;color:inherit;display:grid;gap:.5rem;text-align:center}
+.eb img{width:100%;aspect-ratio:600/852;object-fit:cover;box-shadow:0 14px 30px -14px rgba(42,31,25,.45);transition:transform .4s;margin-bottom:.6rem}
+.eb:hover img{transform:translateY(-6px) rotate(-1deg)}
+.eb b{font-family:var(--f-head);font-weight:500;font-size:1.3rem;line-height:1.15}
+@media (max-width:820px){.ebs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.revs-sec{background:var(--surface);border-block:1px solid var(--line)}
+.revs{display:grid;grid-template-columns:.8fr 1fr 1fr;gap:1.5rem;align-items:stretch}
+.rv-big{text-align:center;padding:2rem 1rem;border:1px solid var(--gold);display:grid;align-content:center;gap:.4rem}
+.rv-big>b{font-family:var(--f-head);font-size:4rem;font-weight:400;line-height:1}
+.rv-big p{margin:0;color:var(--muted);font-weight:300}
+.revs blockquote{margin:0;padding:2rem 1.8rem;background:var(--paper);border:1px solid var(--line);display:grid;align-content:space-between;gap:1.5rem}
+.revs blockquote p{margin:0;font-family:var(--f-head);font-style:italic;font-size:1.7rem;line-height:1.25}
+.revs cite{font-style:normal;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+@media (max-width:820px){.revs{grid-template-columns:1fr}}
+.cards.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:820px){.cards.c3{grid-template-columns:1fr}}
+.contact{padding-block:clamp(4.5rem,9vw,7rem)}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(2rem,6vw,5rem);align-items:center}
+.hours ul{list-style:none;margin:1rem 0 1.4rem;padding:0;border-top:1px solid var(--nline)}
+.hours li{display:flex;justify-content:space-between;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--nline);font-weight:300}
+.hours li b{font-weight:500}
+.hours a{color:var(--ntext)}
+@media (max-width:820px){.contact-grid{grid-template-columns:1fr}}
+
 .gf{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin:-1rem 0 2rem}
 .gf button{font:inherit;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;background:none;border:1px solid var(--line);color:var(--muted);padding:.6rem 1.1rem;cursor:pointer;transition:.2s}
 .gf button:hover,.gf button.on{background:var(--ink);border-color:var(--ink);color:var(--paper)}
@@ -452,33 +512,143 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
 <body>
 
 
-<div class="promo"><b>★ 5,0</b> · 465 opinii na Booksy · <a href="https://www.google.com/maps/place/?q=place_id:ChIJj4OCCLXNHkcRNEORS15rYqE" target="_blank" rel="noopener">Opinie Google</a> · <a href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów wizytę</a></div>
+<div class="promo"><b>★ 5,0</b> · 474 opinie na Booksy · <a href="https://www.google.com/maps/place/?q=place_id:ChIJj4OCCLXNHkcRNEORS15rYqE" target="_blank" rel="noopener">Opinie Google</a> · <a href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów wizytę</a></div>
 <header class="head">
   <div class="wrap">
-    <nav class="nav" aria-label="Tematy"><a href="#kat-brwi">Brwi</a><a href="#kat-rzesy">Rzęsy</a><a href="#kat-pmu">Makijaż permanentny</a><a href="#kat-laser">Laser</a><a href="#kat-pielegnacja">Pielęgnacja</a><a href="#prace">Moje prace</a><a href="#strefa">Strefa klientki</a><a href="#ebooki">E-booki</a><a href="#szkolenia">Szkolenia</a></nav>
+    <nav class="nav" aria-label="Menu"><a href="#o-mnie">O mnie</a><a href="#uslugi">Usługi</a><a href="#szkolenia">Szkolenia</a><a href="#ebooki">E-booki</a><a href="#prace">Moje prace</a><a href="#blog">Blog</a><a href="#kontakt">Kontakt</a></nav>
     <a class="logo" href="#start"><b>Zuzanna Borejszo</b><small>brwi · rzęsy · makijaż permanentny</small></a>
     <a class="bk" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów wizytę</a>
   </div>
 </header>
-<div class="trend"><div class="wrap"><span class="lbl">na czasie</span><a class="pg" href="#prace">Moje prace</a><a class="pg" href="#strefa">Strefa klientki</a><a class="pg" href="#ebooki">E-booki</a><a class="pg" href="#szkolenia">Szkolenia</a><a href="#lifting-rzes">Lifting rzęs</a><a href="#zabiegi-przed-swietami">Zabiegi przed świętami</a><a href="#brwi-2026">Brwi 2026</a><a href="#gojenie-brwi">Gojenie dzień po dniu</a><a href="#nano-microblading-ombre">Nano czy ombre</a></div></div>
 
 <main id="index">
   <section class="intro" id="start">
     <div class="wrap intro-grid">
       <div>
-        <span class="lbl">blog o brwiach, makijażu permanentnym i rzęsach</span>
-        <h1>Brwi, które wyglądają jak <em>Twoje.</em> Tylko lepiej.</h1>
-        <p class="lead">Jestem Zuzanna. Piszę o makijażu permanentnym, stylizacji brwi i liftingu rzęs. Bez marketingu, tak jak tłumaczę klientkom w gabinecie.</p>
-        <div class="acts"><a class="b2 solid" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów wizytę na Booksy</a><a class="b2" href="#najnowsze">Czytaj bloga</a></div>
-        <div class="proof"><span class="stars" aria-hidden="true">★★★★★</span><span><b>5,0 na Booksy</b>, 465 opinii klientek salonu Piękne Spojrzenia<br><a class="glink" href="https://www.google.com/maps/place/?q=place_id:ChIJj4OCCLXNHkcRNEORS15rYqE" target="_blank" rel="noopener"><b>5,0 w Google</b> · zobacz wizytówkę i opinie →</a></span></div>
+        <span class="lbl">linergistka · stylistka brwi i rzęs · Warszawa</span>
+        <h1>Mniej makijażu. <em>Więcej Ciebie.</em></h1>
+        <p class="lead">Jestem Zuzanna Borejszo. Makijaż permanentny, laminacja brwi i lifting rzęs, które budzą się razem z Tobą. Dobrane do Twojej twarzy, naturalne i bezpieczne.</p>
+        <div class="acts"><a class="b2 solid" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów wizytę na Booksy</a><a class="b2" href="#uslugi">Zobacz usługi</a></div>
+        <div class="proof"><span class="stars" aria-hidden="true">★★★★★</span><span><b>5,0 na Booksy</b>, 474 opinie klientek salonu Piękne Spojrzenia<br><a class="glink" href="https://www.google.com/maps/place/?q=place_id:ChIJj4OCCLXNHkcRNEORS15rYqE" target="_blank" rel="noopener"><b>5,0 w Google</b> · zobacz wizytówkę i opinie →</a></span></div>
       </div>
       <figure class="intro-img">
         <img src="img/zuzanna-hero.webp" alt="Zuzanna Borejszo" width="800" height="1000">
-        <figcaption><span class="lbl">autorka</span> <b>Zuzanna Borejszo</b>, linergistka i stylistka brwi i rzęs</figcaption>
+        <figcaption><b>Zuzanna Borejszo</b>, linergistka i stylistka brwi i rzęs</figcaption>
       </figure>
     </div>
   </section>
 
+  <section class="sec wrap" id="o-mnie">
+    <div class="me">
+      <div class="me-txt">
+        <span class="lbl">o mnie</span>
+        <h2>Cześć, jestem <em>Zuzanna</em></h2>
+        <p>Jestem linergistką i stylistką brwi i rzęs. Pracuję w salonie Piękne Spojrzenia na Pradze-Północ. Robię makijaż permanentny brwi, laminację i stylizację brwi oraz lifting i laminację rzęs.</p>
+        <p>Najważniejsze jest dla mnie, żeby efekt wyglądał jak Twój. Dlatego przed każdym zabiegiem mierzę twarz, dobieram kształt i kolor, a potem tłumaczę, jak dbać o efekt w domu. Swoją wiedzą dzielę się też na szkoleniach i w e-bookach.</p>
+        <div class="acts"><a class="b2 solid" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów się do mnie</a><a class="b2" href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Instagram @zuzanna.borejszo</a></div>
+      </div>
+      <div class="vals">
+        <div><i>01</i><b>Naturalny efekt</b><p>Kształt i kolor dobrane do Twojej twarzy, urody i stylu. Bez przerysowania.</p></div>
+        <div><i>02</i><b>Precyzja</b><p>Pomiar, projekt i akceptacja szkicu, zanim zacznę zabieg.</p></div>
+        <div><i>03</i><b>Bezpieczeństwo</b><p>Wywiad przed zabiegiem, sterylne narzędzia i jasne zalecenia po wizycie.</p></div>
+        <div><i>04</i><b>Opieka po zabiegu</b><p>Wiesz, czego się spodziewać dzień po dniu. Z pytaniami zawsze możesz napisać.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec svc-sec" id="uslugi">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="lbl">usługi</span><h2>W czym mogę <em>pomóc</em></h2></div><p>Ceny orientacyjne. Aktualny cennik i wolne terminy znajdziesz na Booksy.</p></div>
+      <div class="svc">
+        <a class="sv" href="#kat-pmu"><div class="sv-ph"><img src="img/nano-microblading-ombre.webp" alt="" loading="lazy"></div><div class="sv-tx"><span class="lbl">Makijaż permanentny</span><h3>Brwi permanentne</h3><p>Pudrowe i ombre brwi, które wyglądają dobrze od rana, bez kredki i żelu. Dopigmentowanie po 4–8 tygodniach.</p><ul><li><span>Brwi permanentne</span><b>po konsultacji</b></li><li><span>Dopigmentowanie</span><b>200 zł</b></li></ul></div></a>
+        <a class="sv" href="#kat-brwi"><div class="sv-ph"><img src="img/laminacja-po-zabiegu.webp" alt="" loading="lazy"></div><div class="sv-tx"><span class="lbl">Brwi</span><h3>Laminacja i stylizacja brwi</h3><p>Ułożone, gęstsze i wyraźne brwi na 4–6 tygodni. Farbowanie i regulacja w cenie laminacji.</p><ul><li><span>Laminacja brwi</span><b>150 zł</b></li><li><span>Henna lub farbka z regulacją</span><b>90 zł</b></li><li><span>Regulacja wosk / pęseta</span><b>40 zł</b></li><li><span>Depilacja wąsika woskiem</span><b>30 zł</b></li></ul></div></a>
+        <a class="sv" href="#kat-rzesy"><div class="sv-ph"><img src="img/lifting-rzes.webp" alt="" loading="lazy"></div><div class="sv-tx"><span class="lbl">Rzęsy</span><h3>Lifting i laminacja rzęs</h3><p>Podkręcone, przyciemnione rzęsy na własnych włoskach, bez doklejania. Także koreańska laminacja rzęs.</p><ul><li><span>Lifting rzęs z koloryzacją</span><b>140 zł</b></li><li><span>Koreańska laminacja rzęs</span><b>140 zł</b></li><li><span>Farbowanie rzęs</span><b>40 zł</b></li></ul></div></a>
+        <a class="sv" href="#kat-brwi"><div class="sv-ph"><img src="img/brwi-2026.webp" alt="" loading="lazy"></div><div class="sv-tx"><span class="lbl">Pakiety</span><h3>Brwi + rzęsy</h3><p>Jedna wizyta i komplet: ułożone brwi i podkręcone rzęsy. Najczęściej wybierane przed urlopem i ważnym wyjściem.</p><ul><li><span>Laminacja brwi + lifting rzęs</span><b>250 zł</b></li><li><span>Henna + lifting rzęs</span><b>230 zł</b></li></ul></div></a>
+      </div>
+      <div class="gmore"><a class="b2 solid" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Pełny cennik i terminy na Booksy</a><a class="b2" href="#strefa">Przed i po zabiegu</a></div>
+    </div>
+  </section>
+
+  <section class="dark band" id="szkolenia-home">
+    <div class="wrap band-grid">
+      <div>
+        <span class="lbl">szkolenia</span>
+        <h2>Naucz się <em>laminacji</em> brwi i rzęs</h2>
+        <p class="lead">Szkolenie od podstaw dla dziewczyn, które chcą zacząć. Teoria, praca na modelce, gotowe protokoły i wsparcie po kursie.</p>
+        <ul class="bul"><li>Budowa włosa, preparaty i dobór czasu</li><li>Laminacja brwi i lifting rzęs krok po kroku</li><li>Praca na modelce pod moim okiem</li></ul>
+        <div class="acts"><a class="b2 solid" href="#szkolenia">Zobacz program</a><a class="b2" href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Zapytaj o termin</a></div>
+      </div>
+      <div class="band-ph"><img src="img/laminacja-rzes.webp" alt="" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="ebooki-home">
+    <div class="sec-head"><div><span class="lbl">e-booki</span><h2>Poradniki <em>do poczytania</em></h2></div><p>Darmowe e-booki z wiedzą z gabinetu. Czytasz online albo pobierasz PDF.</p></div>
+    <div class="ebs"><a class="eb" href="#ebooki"><img src="img/ebook-brwi-do-twojej-twarzy.webp" alt="Okładka: Brwi do Twojej twarzy" width="600" height="852" loading="lazy"><span class="lbl">Brwi · 18 stron</span><b>Brwi do Twojej twarzy</b></a><a class="eb" href="#ebooki"><img src="img/ebook-pierwszy-pmu.webp" alt="Okładka: Pierwszy makijaż permanentny" width="600" height="852" loading="lazy"><span class="lbl">Makijaż permanentny · 10 stron</span><b>Pierwszy makijaż permanentny</b></a><a class="eb" href="#ebooki"><img src="img/ebook-gojenie-brwi.webp" alt="Okładka: Gojenie brwi dzień po dniu" width="600" height="852" loading="lazy"><span class="lbl">Makijaż permanentny · 10 stron</span><b>Gojenie brwi dzień po dniu</b></a><a class="eb" href="#ebooki"><img src="img/ebook-lifting-rzes.webp" alt="Okładka: Lifting i laminacja rzęs" width="600" height="852" loading="lazy"><span class="lbl">Rzęsy · 10 stron</span><b>Lifting i laminacja rzęs</b></a></div>
+    <div class="gmore"><a class="b2 solid" href="#ebooki">Wszystkie e-booki</a></div>
+  </section>
+
+  <section class="sec wrap" id="prace">
+  <div class="sec-head"><div><span class="lbl">portfolio</span><h2>Moje <em>prace</em></h2></div></div>
+  <div class="gsoon"><span class="lbl">Wkrótce</span><p>Przygotowuję nową sesję zdjęć moich prac. Prawdziwe efekty, bez filtrów i bez AI. Zajrzyj tu niedługo.</p><div class="gmore"><a class="b2" href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Zobacz Instagram</a><a class="b2 solid" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów wizytę</a></div></div>
+</section>
+
+  <section class="sec revs-sec" id="opinie">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="lbl">opinie</span><h2>Co mówią <em>klientki</em></h2></div></div>
+      <div class="revs">
+        <div class="rv-big"><b>5,0</b><span class="stars">★★★★★</span><p>474 opinie na Booksy</p><a class="glink" href="https://www.google.com/maps/place/?q=place_id:ChIJj4OCCLXNHkcRNEORS15rYqE" target="_blank" rel="noopener">5,0 w Google · zobacz opinie →</a></div>
+        <blockquote><p>„Piękne, perfekcyjne wykonanie.”</p><cite>Agnieszka · henna z regulacją · Booksy</cite></blockquote>
+        <blockquote><p>„Polecam, bardzo miła i profesjonalna Pani.”</p><cite>Barbara · henna z regulacją · Booksy</cite></blockquote>
+      </div>
+      <div class="gmore"><a class="b2" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Przeczytaj wszystkie opinie</a></div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="z-bloga">
+    <div class="sec-head"><div><span class="lbl">blog</span><h2>Wiedza <em>z gabinetu</em></h2></div><p>Piszę o tym, o co klientki pytają najczęściej.</p></div>
+    <div class="cards c3"><a class="card" href="#lifting-rzes"><div class="pic"><img src="img/lifting-rzes.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">rzęsy</span><h3>Lifting rzęs. Jak wygląda zabieg, ile trzyma i dla kogo to dobry wybór</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#laminacja-rzes"><div class="pic"><img src="img/laminacja-rzes.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">rzęsy</span><h3>Koreańska laminacja rzęs a lifting. Czym się różnią i co wybrać</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#zabiegi-przed-swietami"><div class="pic"><img src="img/zabiegi-przed-swietami.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Brwi i rzęsy na święta i sylwestra. Kiedy umówić który zabieg</h3><span class="meta">4 min czytania</span></div></a></div>
+    <div class="gmore"><a class="b2 solid" href="#blog">Wszystkie artykuły</a></div>
+  </section>
+
+  <section class="sec wrap" id="faq" style="padding-top:0">
+    <div class="sec-head"><div><span class="lbl">faq</span><h2>Najczęstsze pytania</h2></div></div>
+    <div class="faq" style="max-width:52rem">
+      <details><summary>Ile utrzymuje się makijaż permanentny brwi?</summary><p>Zwykle 1–3 lata, zależnie od techniki, typu skóry i ochrony przed słońcem. Odświeżenie robi się co 1–2 lata.</p></details>
+      <details><summary>Ile trzyma laminacja brwi i lifting rzęs?</summary><p>Laminacja brwi zwykle 4–6 tygodni, lifting rzęs 6–8 tygodni. Zabieg można powtarzać, gdy efekt zniknie.</p></details>
+      <details><summary>Czy zabieg boli?</summary><p>Przy makijażu permanentnym stosuję znieczulenie miejscowe, więc większość klientek czuje tylko lekkie drapanie. Laminacja i lifting są bezbolesne.</p></details>
+      <details><summary>Jak się umówić?</summary><p>Najszybciej przez Booksy, gdzie widać wolne terminy. Możesz też napisać na Instagramie.</p></details>
+    </div>
+  </section>
+
+  <section class="dark contact" id="kontakt">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="lbl">kontakt</span>
+        <h2>Zapraszam <em>do salonu</em></h2>
+        <p class="lead">Piękne Spojrzenia, ul. Białostocka 24 (wejście od ul. Markowskiej), 03-741 Warszawa, Praga-Północ. Wizyty tylko po wcześniejszej rezerwacji.</p>
+        <div class="acts"><a class="b2 solid" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów wizytę</a><a class="b2" href="https://www.google.com/maps/place/?q=place_id:ChIJj4OCCLXNHkcRNEORS15rYqE" target="_blank" rel="noopener">Dojazd w Google Maps</a></div>
+      </div>
+      <div class="hours">
+        <span class="lbl">godziny otwarcia</span>
+        <ul><li><span>Poniedziałek – czwartek</span><b>8:00–21:30</b></li><li><span>Piątek</span><b>8:30–21:00</b></li><li><span>Sobota</span><b>8:00–20:00</b></li><li><span>Niedziela</span><b>8:00–21:00</b></li></ul>
+        <p><a href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Instagram @zuzanna.borejszo</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<article id="blog" class="post page blogpage" hidden>
+  <section class="sec wrap" style="padding-bottom:0">
+    <div class="crumbs"><a href="#start">Strona główna</a> / Blog</div>
+    <div class="sec-head" style="margin-top:2rem"><div><span class="lbl">blog</span><h2>Wiedza <em>z gabinetu</em></h2></div><p>Odpowiadam na pytania, które słyszę od klientek: brwi, rzęsy, makijaż permanentny, laser i pielęgnacja.</p></div>
+    <div class="dir"><a href="#kat-brwi"><img src="img/laminacja-po-zabiegu.webp" alt="" loading="lazy" width="88" height="88"><div><b>Brwi</b><em>Laminacja, henna, geometria i trendy</em></div><small>5 tekstów</small></a><a href="#kat-rzesy"><img src="img/lifting-rzes.webp" alt="" loading="lazy" width="88" height="88"><div><b>Rzęsy</b><em>Lifting i laminacja rzęs</em></div><small>2 tekstów</small></a><a href="#kat-pmu"><img src="img/nano-microblading-ombre.webp" alt="" loading="lazy" width="88" height="88"><div><b>Makijaż permanentny</b><em>Techniki, przygotowanie, gojenie i kolor</em></div><small>8 tekstów</small></a><a href="#kat-laser"><img src="img/laser-usuwanie-pmu.webp" alt="" loading="lazy" width="88" height="88"><div><b>Laser</b><em>Usuwanie makijażu permanentnego i tatuaży</em></div><small>5 tekstów</small></a><a href="#kat-pielegnacja"><img src="img/mezoterapia-bezglowa.webp" alt="" loading="lazy" width="88" height="88"><div><b>Pielęgnacja</b><em>Skóra przed i po zabiegach, filtry, sezon</em></div><small>3 tekstów</small></a></div>
+  </section>
+  <section class="sec wrap" id="najnowsze">
+    <div class="sec-head"><div><span class="lbl">najświeższe teksty</span><h2>Nowe na blogu</h2></div></div>
+    <div class="cards"><a class="card" href="#lifting-rzes"><div class="pic"><img src="img/lifting-rzes.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">rzęsy</span><h3>Lifting rzęs. Jak wygląda zabieg, ile trzyma i dla kogo to dobry wybór</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#laminacja-rzes"><div class="pic"><img src="img/laminacja-rzes.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">rzęsy</span><h3>Koreańska laminacja rzęs a lifting. Czym się różnią i co wybrać</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#zabiegi-przed-swietami"><div class="pic"><img src="img/zabiegi-przed-swietami.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Brwi i rzęsy na święta i sylwestra. Kiedy umówić który zabieg</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#brwi-2026"><div class="pic"><img src="img/brwi-2026.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">brwi</span><h3>Miękka laminacja i brwi nano. Jak wyglądają brwi w 2026 roku</h3><span class="meta">5 min czytania</span></div></a><a class="card" href="#jesien-w-gabinecie"><div class="pic"><img src="img/jesien-w-gabinecie.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">pielęgnacja</span><h3>Jesień w gabinecie. Bariera skóry, egzosomy i najlepszy czas na laser</h3><span class="meta">5 min czytania</span></div></a><a class="card" href="#lip-blush"><div class="pic"><img src="img/lip-blush.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Lip blush, czyli makijaż permanentny ust, który wygląda jak naturalny rumieniec</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#geometria-brwi"><div class="pic"><img src="img/geometria-brwi.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">brwi</span><h3>Geometria brwi. Jak wyznaczamy idealny kształt dla Twojej twarzy</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#pico-czy-q-switch"><div class="pic"><img src="img/pico-czy-q-switch.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">laser</span><h3>Laser pikosekundowy czy Q-Switch? Czym się różnią i co to znaczy dla Ciebie</h3><span class="meta">4 min czytania</span></div></a></div>
+  </section>
   <section class="dark week" id="temat">
     <div class="wrap">
       <div class="week-grid">
@@ -503,17 +673,6 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
       <div class="more-row"><span class="lbl">kolejne teksty</span><div class="mini3"><a class="tile" href="#pico-czy-q-switch"><img src="img/pico-czy-q-switch.webp" alt="" loading="lazy" width="96" height="72"><div><span class="lbl">laser</span><h3>Laser pikosekundowy czy Q-Switch? Czym się różnią i co to znaczy dla Ciebie</h3></div></a><a class="tile" href="#tatuaz-mity"><img src="img/tatuaz-mity.webp" alt="" loading="lazy" width="96" height="72"><div><span class="lbl">laser</span><h3>Laserowe usuwanie tatuażu. 6 mitów, w które wciąż wierzymy</h3></div></a><a class="tile" href="#korekta-czy-laser"><img src="img/korekta-czy-laser.webp" alt="" loading="lazy" width="96" height="72"><div><span class="lbl">laser</span><h3>Korekta kolorem czy laser? Co zrobić z nieudanym makijażem permanentnym</h3></div></a></div></div>
     </div>
   </section>
-
-  <section class="sec wrap" id="prace">
-  <div class="sec-head"><div><span class="lbl">portfolio</span><h2>Moje <em>prace</em></h2></div></div>
-  <div class="gsoon"><span class="lbl">Wkrótce</span><p>Przygotowuję nową sesję zdjęć moich prac. Prawdziwe efekty, bez filtrów i bez AI. Zajrzyj tu niedługo.</p><div class="gmore"><a class="b2" href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Zobacz Instagram</a><a class="b2 solid" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów wizytę</a></div></div>
-</section>
-
-  <section class="sec wrap" id="najnowsze">
-    <div class="sec-head"><div><span class="lbl">najświeższe teksty</span><h2>Nowe na blogu</h2></div><p>Nowy tekst codziennie. Odpowiadam na pytania, które słyszę w gabinecie.</p></div>
-    <div class="cards"><a class="card" href="#lifting-rzes"><div class="pic"><img src="img/lifting-rzes.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">rzęsy</span><h3>Lifting rzęs. Jak wygląda zabieg, ile trzyma i dla kogo to dobry wybór</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#laminacja-rzes"><div class="pic"><img src="img/laminacja-rzes.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">rzęsy</span><h3>Koreańska laminacja rzęs a lifting. Czym się różnią i co wybrać</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#zabiegi-przed-swietami"><div class="pic"><img src="img/zabiegi-przed-swietami.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Brwi i rzęsy na święta i sylwestra. Kiedy umówić który zabieg</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#brwi-2026"><div class="pic"><img src="img/brwi-2026.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">brwi</span><h3>Miękka laminacja i brwi nano. Jak wyglądają brwi w 2026 roku</h3><span class="meta">5 min czytania</span></div></a><a class="card" href="#jesien-w-gabinecie"><div class="pic"><img src="img/jesien-w-gabinecie.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">pielęgnacja</span><h3>Jesień w gabinecie. Bariera skóry, egzosomy i najlepszy czas na laser</h3><span class="meta">5 min czytania</span></div></a><a class="card" href="#lip-blush"><div class="pic"><img src="img/lip-blush.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Lip blush, czyli makijaż permanentny ust, który wygląda jak naturalny rumieniec</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#geometria-brwi"><div class="pic"><img src="img/geometria-brwi.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">brwi</span><h3>Geometria brwi. Jak wyznaczamy idealny kształt dla Twojej twarzy</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#pico-czy-q-switch"><div class="pic"><img src="img/pico-czy-q-switch.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">laser</span><h3>Laser pikosekundowy czy Q-Switch? Czym się różnią i co to znaczy dla Ciebie</h3><span class="meta">4 min czytania</span></div></a></div>
-  </section>
-
   <section class="dark path" id="zacznij">
     <div class="wrap path-grid">
       <div>
@@ -529,38 +688,8 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
       <ol class="steps"><li><a href="#jak-wybrac-linergistke"><div><b>Jak wybrać linergistkę</b><span>Portfolio, higiena i sygnały ostrzegawcze.</span></div><i>4 min</i></a></li><li><a href="#nano-microblading-ombre"><div><b>Nano, microblading czy ombre</b><span>Która technika pasuje do Twojej skóry.</span></div><i>4 min</i></a></li><li><a href="#pierwszy-makijaz-permanentny"><div><b>Jak przygotować się do zabiegu</b><span>Co zrobić 4 tygodnie, tydzień i dzień przed.</span></div><i>4 min</i></a></li><li><a href="#gojenie-brwi"><div><b>Gojenie dzień po dniu</b><span>Dlaczego brwi znikają i kiedy kolor wraca.</span></div><i>4 min</i></a></li></ol>
     </div>
   </section>
-
-  <section class="sec wrap" id="tematy">
-    <div class="sec-head"><div><span class="lbl">wszystkie tematy</span><h2>Wybierz temat</h2></div></div>
-    <div class="dir"><a href="#kat-brwi"><img src="img/laminacja-po-zabiegu.webp" alt="" loading="lazy" width="88" height="88"><div><b>Brwi</b><em>Laminacja, henna, geometria i trendy</em></div><small>5 tekstów</small></a><a href="#kat-rzesy"><img src="img/lifting-rzes.webp" alt="" loading="lazy" width="88" height="88"><div><b>Rzęsy</b><em>Lifting i laminacja rzęs</em></div><small>2 tekstów</small></a><a href="#kat-pmu"><img src="img/nano-microblading-ombre.webp" alt="" loading="lazy" width="88" height="88"><div><b>Makijaż permanentny</b><em>Techniki, przygotowanie, gojenie i kolor</em></div><small>8 tekstów</small></a><a href="#kat-laser"><img src="img/laser-usuwanie-pmu.webp" alt="" loading="lazy" width="88" height="88"><div><b>Laser</b><em>Usuwanie makijażu permanentnego i tatuaży</em></div><small>5 tekstów</small></a><a href="#kat-pielegnacja"><img src="img/mezoterapia-bezglowa.webp" alt="" loading="lazy" width="88" height="88"><div><b>Pielęgnacja</b><em>Skóra przed i po zabiegach, filtry, sezon</em></div><small>3 tekstów</small></a></div>
-  </section>
-
   <section class="sec wrap" id="kat-brwi" style="padding-top:0"><div class="sec-head"><div><span class="lbl">brwi</span><h2>Brwi</h2></div><p>Laminacja, henna, geometria i trendy.</p></div><div class="cards"><a class="card" href="#brwi-2026"><div class="pic"><img src="img/brwi-2026.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">brwi</span><h3>Miękka laminacja i brwi nano. Jak wyglądają brwi w 2026 roku</h3><span class="meta">5 min czytania</span></div></a><a class="card" href="#geometria-brwi"><div class="pic"><img src="img/geometria-brwi.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">brwi</span><h3>Geometria brwi. Jak wyznaczamy idealny kształt dla Twojej twarzy</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#laminacja-po-zabiegu"><div class="pic"><img src="img/laminacja-po-zabiegu.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">brwi</span><h3>Laminacja brwi. Jak dbać o efekt i jak często można ją powtarzać</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#henna-czy-farbka"><div class="pic"><img src="img/henna-czy-farbka.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">brwi</span><h3>Henna pudrowa czy farbka? Jak wybrać koloryzację brwi</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#brwi-po-40"><div class="pic"><img src="img/brwi-po-40.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">brwi</span><h3>Brwi po 40. Jak je odmłodzić, a nie postarzyć</h3><span class="meta">4 min czytania</span></div></a></div></section><section class="sec wrap" id="kat-rzesy" style="padding-top:0"><div class="sec-head"><div><span class="lbl">rzęsy</span><h2>Rzęsy</h2></div><p>Lifting i laminacja rzęs.</p></div><div class="cards"><a class="card" href="#lifting-rzes"><div class="pic"><img src="img/lifting-rzes.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">rzęsy</span><h3>Lifting rzęs. Jak wygląda zabieg, ile trzyma i dla kogo to dobry wybór</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#laminacja-rzes"><div class="pic"><img src="img/laminacja-rzes.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">rzęsy</span><h3>Koreańska laminacja rzęs a lifting. Czym się różnią i co wybrać</h3><span class="meta">4 min czytania</span></div></a></div></section><section class="sec wrap" id="kat-pmu" style="padding-top:0"><div class="sec-head"><div><span class="lbl">makijaż permanentny</span><h2>Makijaż permanentny</h2></div><p>Techniki, przygotowanie, gojenie i kolor.</p></div><div class="cards"><a class="card" href="#zabiegi-przed-swietami"><div class="pic"><img src="img/zabiegi-przed-swietami.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Brwi i rzęsy na święta i sylwestra. Kiedy umówić który zabieg</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#lip-blush"><div class="pic"><img src="img/lip-blush.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Lip blush, czyli makijaż permanentny ust, który wygląda jak naturalny rumieniec</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#gojenie-brwi"><div class="pic"><img src="img/gojenie-brwi.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Gojenie makijażu permanentnego brwi dzień po dniu</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#dlaczego-brwi-sine"><div class="pic"><img src="img/dlaczego-brwi-sine.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Dlaczego makijaż permanentny robi się siny albo rudy? Trochę teorii koloru</h3><span class="meta">5 min czytania</span></div></a><a class="card" href="#pierwszy-makijaz-permanentny"><div class="pic"><img src="img/pierwszy-makijaz-permanentny.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Pierwszy makijaż permanentny brwi. Jak się przygotować do zabiegu</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#przeciwwskazania-pmu"><div class="pic"><img src="img/przeciwwskazania-pmu.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Przeciwwskazania do makijażu permanentnego. Kiedy lepiej poczekać</h3><span class="meta">3 min czytania</span></div></a><a class="card" href="#nano-microblading-ombre"><div class="pic"><img src="img/nano-microblading-ombre.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Nano brows, microblading czy ombre? Porównanie technik makijażu permanentnego brwi</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#jak-wybrac-linergistke"><div class="pic"><img src="img/jak-wybrac-linergistke.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Jak wybrać linergistkę? 8 rzeczy, które warto sprawdzić przed zabiegiem</h3><span class="meta">4 min czytania</span></div></a></div></section><section class="sec wrap" id="kat-laser" style="padding-top:0"><div class="sec-head"><div><span class="lbl">laser</span><h2>Laser</h2></div><p>Usuwanie makijażu permanentnego i tatuaży.</p></div><div class="cards"><a class="card" href="#laser-usuwanie-pmu"><div class="pic"><img src="img/laser-usuwanie-pmu.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">laser</span><h3>Laserowe usuwanie makijażu permanentnego. Ile sesji, jak to działa i kiedy warto</h3><span class="meta">6 min czytania</span></div></a><a class="card" href="#pico-czy-q-switch"><div class="pic"><img src="img/pico-czy-q-switch.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">laser</span><h3>Laser pikosekundowy czy Q-Switch? Czym się różnią i co to znaczy dla Ciebie</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#tatuaz-mity"><div class="pic"><img src="img/tatuaz-mity.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">laser</span><h3>Laserowe usuwanie tatuażu. 6 mitów, w które wciąż wierzymy</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#korekta-czy-laser"><div class="pic"><img src="img/korekta-czy-laser.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">laser</span><h3>Korekta kolorem czy laser? Co zrobić z nieudanym makijażem permanentnym</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#usuwanie-kreski-z-powieki"><div class="pic"><img src="img/usuwanie-kreski-z-powieki.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">laser</span><h3>Usuwanie kreski z powieki. Dlaczego to zabieg wymagający szczególnej ostrożności</h3><span class="meta">4 min czytania</span></div></a></div></section><section class="sec wrap" id="kat-pielegnacja" style="padding-top:0"><div class="sec-head"><div><span class="lbl">pielęgnacja</span><h2>Pielęgnacja</h2></div><p>Skóra przed i po zabiegach, filtry, sezon.</p></div><div class="cards"><a class="card" href="#jesien-w-gabinecie"><div class="pic"><img src="img/jesien-w-gabinecie.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">pielęgnacja</span><h3>Jesień w gabinecie. Bariera skóry, egzosomy i najlepszy czas na laser</h3><span class="meta">5 min czytania</span></div></a><a class="card" href="#spf-a-pmu"><div class="pic"><img src="img/spf-a-pmu.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">pielęgnacja</span><h3>Filtr SPF a makijaż permanentny. Dlaczego słońce to największy wróg pigmentu</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#mezoterapia-bezglowa"><div class="pic"><img src="img/mezoterapia-bezglowa.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">pielęgnacja</span><h3>Mezoterapia bezigłowa. Składniki aktywne głęboko w skórze, bez igły</h3><span class="meta">4 min czytania</span></div></a></div></section>
-
-  <section class="sec wrap" id="o-mnie">
-    <div class="authorbox">
-      <img src="img/zuzanna-avatar.webp" alt="Zuzanna Borejszo" width="400" height="400" loading="lazy">
-      <div>
-        <span class="lbl">autorka</span>
-        <h2>Cześć, jestem <em>Zuzanna</em></h2>
-        <p>Jestem linergistką i stylistką brwi i rzęs w salonie Piękne Spojrzenia na Pradze-Północ. Robię makijaż permanentny, stylizację brwi oraz lifting i laminację rzęs. Na tym blogu tłumaczę wszystko tak, jak tłumaczę klientkom na fotelu.</p>
-        <div class="acts"><a class="b2 solid" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów się do mnie</a><a class="b2" href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Instagram @zuzanna.borejszo</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec wrap" id="faq" style="padding-top:0">
-    <div class="sec-head"><div><span class="lbl">faq</span><h2>Najczęstsze pytania</h2></div></div>
-    <div class="faq" style="max-width:52rem">
-      <details><summary>Ile utrzymuje się makijaż permanentny brwi?</summary><p>Zwykle 1–3 lata, zależnie od techniki, typu skóry i ochrony przed słońcem. Nano i ombre bledną łagodnie, odświeżenie robi się co 1–2 lata.</p></details>
-      <details><summary>Czy zabieg boli?</summary><p>Stosuję znieczulenie miejscowe, więc większość klientek czuje tylko lekkie drapanie lub mrowienie.</p></details>
-      <details><summary>Ile sesji potrzeba, żeby usunąć stary makijaż laserem?</summary><p>Zawsze kilka, w odstępach 6–8 tygodni. Dokładną liczbę można podać po konsultacji i pierwszym zabiegu.</p></details>
-      <details><summary>Czy dopigmentowanie jest w cenie?</summary><p>Wizyta uzupełniająca po 4–8 tygodniach jest częścią zabiegu. Szczegóły i cennik znajdziesz na Booksy.</p></details>
-      <details><summary>Jak się umówić?</summary><p>Najszybciej przez Booksy, gdzie widać wolne terminy. Możesz też napisać na Instagramie.</p></details>
-    </div>
-  </section>
-</main>
-
+</article>
 <div class="wrap">
   <article id="lifting-rzes" class="post" hidden>
   <div class="crumbs"><a href="#najnowsze">Blog</a> / <a href="#kat-rzesy">Rzęsy</a></div>
@@ -1716,11 +1845,11 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
     <span class="lbl">mapa strony</span>
     <div class="foot-grid">
       <div><a class="logo" href="#start"><b>Zuzanna Borejszo</b><small>brwi · rzęsy · makijaż permanentny</small></a><p>Makijaż permanentny, stylizacja brwi i lifting rzęs w Warszawie.</p></div>
-      <div><h4>TEMATY</h4><ul><li><a href="#kat-brwi">Brwi</a></li><li><a href="#kat-rzesy">Rzęsy</a></li><li><a href="#kat-pmu">Makijaż permanentny</a></li><li><a href="#kat-laser">Laser</a></li><li><a href="#kat-pielegnacja">Pielęgnacja</a></li></ul></div>
-      <div><h4>SALON</h4><ul><li>Piękne Spojrzenia</li><li>ul. Białostocka 24</li><li>wejście od ul. Markowskiej</li><li>03-741 Warszawa</li><li>codziennie 8:00–21:30</li><li><a href="https://www.google.com/maps/place/?q=place_id:ChIJj4OCCLXNHkcRNEORS15rYqE" target="_blank" rel="noopener">Wizytówka i opinie Google</a></li></ul></div>
-      <div><h4>KONTAKT</h4><ul><li><a href="#ebooki">E-booki</a></li><li><a href="#szkolenia">Szkolenia</a></li><li><a href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Rezerwacja na Booksy</a></li><li><a href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Instagram</a></li><li><a href="#faq">Najczęstsze pytania</a></li></ul></div>
+      <div><h4>BLOG</h4><ul><li><a href="#kat-brwi">Brwi</a></li><li><a href="#kat-rzesy">Rzęsy</a></li><li><a href="#kat-pmu">Makijaż permanentny</a></li><li><a href="#kat-laser">Laser</a></li><li><a href="#kat-pielegnacja">Pielęgnacja</a></li></ul></div>
+      <div><h4>SALON</h4><ul><li>Piękne Spojrzenia</li><li>ul. Białostocka 24</li><li>wejście od ul. Markowskiej</li><li>03-741 Warszawa</li><li>pon–czw 8:00–21:30</li><li>pt 8:30–21:00 · sob 8:00–20:00</li><li>nd 8:00–21:00</li><li><a href="https://www.google.com/maps/place/?q=place_id:ChIJj4OCCLXNHkcRNEORS15rYqE" target="_blank" rel="noopener">Wizytówka i opinie Google</a></li></ul></div>
+      <div><h4>KONTAKT</h4><ul><li><a href="#uslugi">Usługi i cennik</a></li><li><a href="#szkolenia">Szkolenia</a></li><li><a href="#ebooki">E-booki</a></li><li><a href="#strefa">Strefa klientki</a></li><li><a href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Rezerwacja na Booksy</a></li><li><a href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Instagram</a></li><li><a href="#faq">Najczęstsze pytania</a></li></ul></div>
     </div>
-    <p class="fine">Artykuły mają charakter edukacyjny i nie zastępują konsultacji. Przed każdym zabiegiem przeprowadzam wywiad i kwalifikację. Zdjęcia ilustrujące artykuły zostały wygenerowane przez AI i nie są zdjęciami moich prac. Prawdziwe efekty znajdziesz na Instagramie. © 2026 Zuzanna Borejszo</p>
+    <p class="fine">Artykuły mają charakter edukacyjny i nie zastępują konsultacji. Przed każdym zabiegiem przeprowadzam wywiad i kwalifikację. Zdjęcia ilustrujące usługi i artykuły zostały wygenerowane przez AI i nie są zdjęciami moich prac. Prawdziwe efekty znajdziesz na Instagramie. © 2026 Zuzanna Borejszo</p>
   </div>
 </footer>
 
