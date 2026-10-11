@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Blog Zuzanny Borejszo, linergistki z Warszawy (Praga-Północ). Makijaż permanentny, stylizacja brwi, lifting rzęs i laserowe usuwanie PMU.">
+<meta name="description" content="Blog Zuzanny Borejszo, linergistki z Warszawy (Praga-Północ). Makijaż permanentny, stylizacja brwi, lifting rzęs i laserowe usuwanie PMU. E-booki i szkolenia.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Zuzanna Borejszo · Brwi, rzęsy, makijaż permanentny">
-<meta property="og:description" content="Blog Zuzanny Borejszo, linergistki z Warszawy (Praga-Północ). Makijaż permanentny, stylizacja brwi, lifting rzęs i laserowe usuwanie PMU.">
+<meta property="og:description" content="Blog Zuzanny Borejszo, linergistki z Warszawy (Praga-Północ). Makijaż permanentny, stylizacja brwi, lifting rzęs i laserowe usuwanie PMU. E-booki i szkolenia.">
 <meta property="og:image" content="https://zuzannaborejszo.pl/img/zuzanna-hero.webp">
 <meta property="og:url" content="https://zuzannaborejszo.pl/">
 <link rel="canonical" href="https://zuzannaborejszo.pl/">
@@ -63,8 +63,8 @@ img{display:block;max-width:100%;height:auto}
 .nav a:hover{color:var(--ink);border-bottom-color:var(--gold)}
 .bk{grid-column:3;justify-self:end;display:inline-flex;align-items:center;justify-content:center;gap:.4rem;background:var(--ink);color:var(--paper);font-family:var(--f-body);font-weight:500;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:.85rem 1.4rem;white-space:nowrap;transition:background .3s,color .3s}
 .bk:hover{background:var(--accent);color:var(--on-accent)}
-@media (max-width:1180px){.nav{display:none}.head .wrap{grid-template-columns:auto 1fr}.head .logo{grid-column:1;justify-items:start}.bk{grid-column:2}}
-@media (max-width:1180px){.head .wrap{grid-template-columns:minmax(0,1fr) auto}}
+@media (max-width:1340px){.nav{display:none}.head .wrap{grid-template-columns:auto 1fr}.head .logo{grid-column:1;justify-items:start}.bk{grid-column:2}}
+@media (max-width:1340px){.head .wrap{grid-template-columns:minmax(0,1fr) auto}}
 @media (max-width:520px){.head .logo b{font-size:1.15rem;letter-spacing:.08em}.head .logo small{display:none}.bk{padding:.75rem .9rem;letter-spacing:.12em;font-size:.62rem}.head .wrap{gap:.75rem}}
 .trend{background:var(--paper);color:var(--muted);border-bottom:1px solid var(--line);font-size:.86rem}
 .trend .wrap{display:flex;gap:2rem;align-items:center;justify-content:center;padding-block:.7rem;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
@@ -283,6 +283,35 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
 .intro-img figcaption b{color:var(--ink);font-weight:500;font-family:var(--f-head);font-size:1.15rem}
 @media (max-width:820px){.intro-grid{grid-template-columns:1fr}.intro-img{order:-1}.intro-img img{aspect-ratio:4/4.4}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* pages: e-booki, szkolenia */
+.page .art-head{margin-bottom:2.75rem}
+.ebook{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(1.75rem,5vw,3.5rem);align-items:start}
+.ebook-cover{margin:0 0 0 18px}
+.ebook-cover img{width:100%;box-shadow:-18px 18px 0 -1px var(--paper),-18px 18px 0 0 var(--gold),0 24px 50px -24px rgba(42,31,25,.45)}
+.ebook-tx h3{font-size:clamp(2rem,4vw,2.7rem);font-weight:400;margin:.75rem 0 0}
+.ebook-lead{color:var(--muted);font-weight:300;margin:1rem 0 0}
+.chapters{list-style:none;counter-reset:c;margin:1.75rem 0 0;padding:0;border-top:1px solid var(--line)}
+.chapters li{counter-increment:c;display:grid;grid-template-columns:2.4rem minmax(0,1fr);column-gap:.75rem;padding:.85rem 0;border-bottom:1px solid var(--line)}
+.chapters li::before{content:counter(c);grid-row:1/3;font-family:var(--f-head);font-style:italic;font-size:1.6rem;line-height:1;color:var(--gold)}
+.chapters b{font-family:var(--f-head);font-weight:500;font-size:1.2rem;line-height:1.2}
+.chapters span{color:var(--muted);font-size:.92rem;font-weight:300;line-height:1.5;margin-top:.15rem}
+.fine-note{font-size:.85rem;color:var(--muted);font-weight:300;margin:1rem 0 0}
+.soon{margin-top:3.5rem;padding:1.75rem;text-align:center;background:var(--tint);display:grid;gap:.5rem;justify-items:center}
+.soon p{margin:0;color:var(--muted);font-weight:300;max-width:44ch}
+.tr-intro p{font-family:var(--f-head);font-size:clamp(1.25rem,2.2vw,1.45rem);line-height:1.45;margin:0;text-align:center}
+.tr-h{font-family:var(--f-head);font-weight:500;font-size:2.05rem;margin:3rem 0 1.25rem;text-align:center}
+.tr-grid{list-style:none;counter-reset:t;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.tr-grid li{counter-increment:t;background:var(--surface);padding:1.5rem 1.4rem;display:grid;gap:.4rem}
+.tr-grid li:last-child:nth-child(odd){grid-column:1/-1}
+.tr-grid li::before{content:"0" counter(t);font-family:var(--f-head);font-style:italic;font-size:1.9rem;line-height:1;color:var(--gold)}
+.tr-grid b{font-family:var(--f-head);font-weight:500;font-size:1.4rem;line-height:1.15}
+.tr-grid span{color:var(--muted);font-size:.95rem;font-weight:300;line-height:1.55}
+.tr-who{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+.tr-who>div{border-top:1px solid var(--gold);padding-top:1rem}
+.tr-who p{margin:.5rem 0 0;color:var(--muted);font-weight:300}
+.trend .pg{font-family:var(--f-body);font-style:normal;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:500}
+@media (max-width:760px){.ebook,.tr-grid,.tr-who{grid-template-columns:1fr}.ebook-cover{max-width:320px;margin-inline:auto}}
 </style>
 </head>
 <body>
@@ -291,12 +320,12 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
 <div class="promo"><b>★ 5,0</b> · 465 opinii na Booksy · <a href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów wizytę</a></div>
 <header class="head">
   <div class="wrap">
-    <nav class="nav" aria-label="Tematy"><a href="#kat-brwi">Brwi</a><a href="#kat-rzesy">Rzęsy</a><a href="#kat-pmu">Makijaż permanentny</a><a href="#kat-laser">Laser</a><a href="#kat-pielegnacja">Pielęgnacja</a></nav>
+    <nav class="nav" aria-label="Tematy"><a href="#kat-brwi">Brwi</a><a href="#kat-rzesy">Rzęsy</a><a href="#kat-pmu">Makijaż permanentny</a><a href="#kat-laser">Laser</a><a href="#kat-pielegnacja">Pielęgnacja</a><a href="#ebooki">E-booki</a><a href="#szkolenia">Szkolenia</a></nav>
     <a class="logo" href="#start"><b>Zuzanna Borejszo</b><small>brwi · rzęsy · makijaż permanentny</small></a>
     <a class="bk" href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Umów wizytę</a>
   </div>
 </header>
-<div class="trend"><div class="wrap"><span class="lbl">na czasie</span><a href="#lifting-rzes">Lifting rzęs</a><a href="#zabiegi-przed-swietami">Zabiegi przed świętami</a><a href="#brwi-2026">Brwi 2026</a><a href="#gojenie-brwi">Gojenie dzień po dniu</a><a href="#nano-microblading-ombre">Nano czy ombre</a></div></div>
+<div class="trend"><div class="wrap"><span class="lbl">na czasie</span><a class="pg" href="#ebooki">E-booki</a><a class="pg" href="#szkolenia">Szkolenia</a><a href="#lifting-rzes">Lifting rzęs</a><a href="#zabiegi-przed-swietami">Zabiegi przed świętami</a><a href="#brwi-2026">Brwi 2026</a><a href="#gojenie-brwi">Gojenie dzień po dniu</a><a href="#nano-microblading-ombre">Nano czy ombre</a></div></div>
 
 <main id="index">
   <section class="intro" id="start">
@@ -1318,6 +1347,67 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
   <aside class="related" aria-label="Czytaj dalej"><span class="lbl">czytaj dalej</span><div class="rel"><a class="card" href="#zabiegi-przed-swietami"><div class="pic"><img src="img/zabiegi-przed-swietami.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Brwi i rzęsy na święta i sylwestra. Kiedy umówić który zabieg</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#lip-blush"><div class="pic"><img src="img/lip-blush.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Lip blush, czyli makijaż permanentny ust, który wygląda jak naturalny rumieniec</h3><span class="meta">4 min czytania</span></div></a><a class="card" href="#gojenie-brwi"><div class="pic"><img src="img/gojenie-brwi.webp" alt="" loading="lazy" width="800" height="532"></div><div class="tx"><span class="lbl">makijaż permanentny</span><h3>Gojenie makijażu permanentnego brwi dzień po dniu</h3><span class="meta">4 min czytania</span></div></a></div></aside>
   <nav class="pn" aria-label="Poprzedni i następny"><span></span><a href="#nano-microblading-ombre"><span class="lbl">następny →</span><b>Nano brows, microblading czy ombre? Porównanie technik makijażu permanentnego brwi</b></a></nav>
 </article>
+  <article id="ebooki" class="post page" hidden>
+  <div class="crumbs"><a href="#start">Strona główna</a> / E-booki</div>
+  <header class="art-head">
+    <span class="lbl">E-booki</span>
+    <h2>Poradniki od <em>Zuzy</em></h2>
+    <p class="dek">To, co tłumaczę klientkom na fotelu, zebrane w krótkie przewodniki. Możesz do nich wracać przed lustrem.</p>
+  </header>
+
+  <div class="ebook">
+    <figure class="ebook-cover"><img src="img/ebook-brwi-do-twojej-twarzy.webp" alt="Okładka e-booka Brwi do Twojej twarzy" width="600" height="852" loading="lazy"></figure>
+    <div class="ebook-tx">
+      <span class="lbl">Przewodnik · krok po kroku · 18 stron · PDF</span>
+      <h3>Brwi do Twojej twarzy</h3>
+      <p class="ebook-lead">Jak dobrać idealny kształt brwi do typu twarzy. Bez zgadywania i bez kopiowania trendów. Zasady, których używam przy każdej klientce, podane tak, żebyś mogła sprawdzić je sama, w 10 minut.</p>
+      <ol class="chapters">
+        <li><b>Anatomia brwi i metoda 3 punktów</b><span>Gdzie zaczyna się brew, gdzie ma łuk i gdzie kończy ogon.</span></li>
+        <li><b>Jaki masz kształt twarzy?</b><span>Prosty pomiar miarką i 6 typów: owalna, okrągła, kwadratowa, prostokątna, serce, diament.</span></li>
+        <li><b>Rozstaw i grubość</b><span>Ile miejsca między brwiami i jaka grubość pasuje do Twoich rysów.</span></li>
+        <li><b>Kolor, który nie krzyczy</b><span>Jak dobrać odcień do włosów i karnacji.</span></li>
+        <li><b>7 błędów, które widzę najczęściej</b><span>I jak ich uniknąć w domu.</span></li>
+        <li><b>Plan: zapuszczam brwi</b><span>Co robić tydzień po tygodniu, gdy chcesz zmienić kształt.</span></li>
+        <li><b>Efekt na dłużej: co wybrać?</b><span>Porównanie laminacji, henny i makijażu permanentnego.</span></li>
+      </ol>
+      <div class="acts"><a class="b2 solid" href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Napisz po e-booka</a><a class="b2" href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Instagram @zuzanna.borejszo</a></div>
+      <p class="fine-note">Napisz „e-book” w wiadomości na Instagramie, a odeślę Ci szczegóły.</p>
+    </div>
+  </div>
+
+  <div class="soon">
+    <span class="lbl">Wkrótce</span>
+    <p>Kolejne poradniki są w przygotowaniu. Daj znać na Instagramie, o czym chcesz przeczytać.</p>
+  </div>
+</article>
+<article id="szkolenia" class="post page" hidden>
+  <div class="crumbs"><a href="#start">Strona główna</a> / Szkolenia</div>
+  <header class="art-head">
+    <span class="lbl">Szkolenia</span>
+    <h2>Perfekcyjne <em>Brwi</em></h2>
+    <p class="dek">Szkolenie ze stylizacji brwi dla osób, które chcą robić to dobrze: od budowy włosa, przez laminację i koloryzację, po geometrię.</p>
+  </header>
+
+  <div class="tr-intro">
+    <p>Uczę tego, czego sama używam codziennie w salonie Piękne Spojrzenia. Mniej teorii dla teorii, więcej rzeczy, które od razu przydają się przy klientce: jak ocenić włos, jak dobrać produkt i czas, jak wyznaczyć kształt, który pasuje do twarzy.</p>
+  </div>
+
+  <h3 class="tr-h">Program</h3>
+  <ol class="tr-grid">
+    <li><b>Budowa włosa i skóry</b><span>Jak wygląda włos brwi, co dzieje się z nim podczas zabiegu i jak ocenić jego kondycję przed pracą.</span></li>
+    <li><b>Laminacja brwi</b><span>Przebieg zabiegu krok po kroku, dobór czasu do rodzaju włosa i pielęgnacja po zabiegu.</span></li>
+    <li><b>Henna</b><span>Kiedy henna, a kiedy farbka. Koloryzacja skóry i włosa, dobór odcienia.</span></li>
+    <li><b>Farbki do brwi</b><span>Mieszanie kolorów, neutralizacja niechcianych tonów i trwałość efektu.</span></li>
+    <li><b>Geometria brwi</b><span>Wyznaczanie kształtu do twarzy metodą punktów. Brwi się projektuje, a nie kopiuje.</span></li>
+  </ol>
+
+  <div class="tr-who">
+    <div><span class="lbl">Dla kogo</span><p>Dla osób, które zaczynają pracę z brwiami albo chcą uporządkować wiedzę i pracować pewniej.</p></div>
+    <div><span class="lbl">Terminy i cena</span><p>Ustalane indywidualnie. Napisz do mnie, a odpowiem z wolnymi terminami i szczegółami.</p></div>
+  </div>
+
+  <div class="cta"><span class="lbl">Zapisy</span><p><span>Chcesz się zapisać albo masz pytanie?</span> Napisz na Instagramie „szkolenie”, a wyślę Ci szczegóły.</p><div class="cta-btns"><a href="https://ig.me/m/zuzanna.borejszo" target="_blank" rel="noopener">Zapytaj o szkolenie</a><a href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Zobacz moje prace</a></div></div>
+</article>
 </div>
 
 <footer class="foot">
@@ -1327,7 +1417,7 @@ td.num{font-family:var(--f-head);font-size:1.15rem;white-space:nowrap;font-weigh
       <div><a class="logo" href="#start"><b>Zuzanna Borejszo</b><small>brwi · rzęsy · makijaż permanentny</small></a><p>Makijaż permanentny, stylizacja brwi i lifting rzęs w Warszawie.</p></div>
       <div><h4>TEMATY</h4><ul><li><a href="#kat-brwi">Brwi</a></li><li><a href="#kat-rzesy">Rzęsy</a></li><li><a href="#kat-pmu">Makijaż permanentny</a></li><li><a href="#kat-laser">Laser</a></li><li><a href="#kat-pielegnacja">Pielęgnacja</a></li></ul></div>
       <div><h4>SALON</h4><ul><li>Piękne Spojrzenia</li><li>ul. Białostocka 24</li><li>wejście od ul. Markowskiej</li><li>03-741 Warszawa</li><li>codziennie 8:00–21:30</li></ul></div>
-      <div><h4>KONTAKT</h4><ul><li><a href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Rezerwacja na Booksy</a></li><li><a href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Instagram</a></li><li><a href="#faq">Najczęstsze pytania</a></li></ul></div>
+      <div><h4>KONTAKT</h4><ul><li><a href="#ebooki">E-booki</a></li><li><a href="#szkolenia">Szkolenia</a></li><li><a href="https://booksy.com/pl-pl/68454_piekne-spojrzenia_brwi-i-rzesy_3_warszawa" target="_blank" rel="noopener">Rezerwacja na Booksy</a></li><li><a href="https://www.instagram.com/zuzanna.borejszo/" target="_blank" rel="noopener">Instagram</a></li><li><a href="#faq">Najczęstsze pytania</a></li></ul></div>
     </div>
     <p class="fine">Artykuły mają charakter edukacyjny i nie zastępują konsultacji. Przed każdym zabiegiem przeprowadzam wywiad i kwalifikację. Zdjęcia ilustrujące artykuły zostały wygenerowane przez AI i nie są zdjęciami moich prac. Prawdziwe efekty znajdziesz na Instagramie. © 2026 Zuzanna Borejszo</p>
   </div>
